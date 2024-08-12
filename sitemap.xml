@@ -30,15 +30,15 @@
   </url>
   
   <url>
-    <loc>https://newcoding.co.kr/database/4/</loc>
-    <lastmod>2022-12-19</lastmod>
+    <loc>https://newcoding.co.kr/database/3/</loc>
+    <lastmod>2022-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://newcoding.co.kr/database/3/</loc>
-    <lastmod>2022-11-25</lastmod>
+    <loc>https://newcoding.co.kr/database/4/</loc>
+    <lastmod>2022-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -163,15 +163,15 @@
   </url>
   
   <url>
-    <loc>https://newcoding.co.kr/web/newb/4/</loc>
-    <lastmod>2022-08-27</lastmod>
+    <loc>https://newcoding.co.kr/web/newb/3/</loc>
+    <lastmod>2022-06-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://newcoding.co.kr/web/newb/3/</loc>
-    <lastmod>2022-06-26</lastmod>
+    <loc>https://newcoding.co.kr/web/newb/4/</loc>
+    <lastmod>2022-08-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -226,15 +226,15 @@
   </url>
   
   <url>
-    <loc>https://newcoding.co.kr/web/essential/7/</loc>
-    <lastmod>2020-11-14</lastmod>
+    <loc>https://newcoding.co.kr/web/essential/8/</loc>
+    <lastmod>2021-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://newcoding.co.kr/web/essential/8/</loc>
-    <lastmod>2021-01-01</lastmod>
+    <loc>https://newcoding.co.kr/web/essential/7/</loc>
+    <lastmod>2020-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -275,15 +275,15 @@
   </url>
   
   <url>
-    <loc>https://newcoding.co.kr/web/essential/20/</loc>
-    <lastmod>2024-01-01</lastmod>
+    <loc>https://newcoding.co.kr/web/essential/2/</loc>
+    <lastmod>2019-11-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://newcoding.co.kr/web/essential/2/</loc>
-    <lastmod>2019-11-19</lastmod>
+    <loc>https://newcoding.co.kr/web/essential/20/</loc>
+    <lastmod>2024-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -485,15 +485,15 @@
   </url>
   
   <url>
-    <loc>https://newcoding.co.kr/typescript/basic/3/</loc>
-    <lastmod>2022-12-02</lastmod>
+    <loc>https://newcoding.co.kr/typescript/basic/4/</loc>
+    <lastmod>2022-12-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://newcoding.co.kr/typescript/basic/4/</loc>
-    <lastmod>2022-12-03</lastmod>
+    <loc>https://newcoding.co.kr/typescript/basic/3/</loc>
+    <lastmod>2022-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -548,13 +548,6 @@
   </url>
   
   <url>
-    <loc>https://newcoding.co.kr/javascript/special/5/</loc>
-    <lastmod>2021-09-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://newcoding.co.kr/javascript/special/6/</loc>
     <lastmod>2022-11-09</lastmod>
     <changefreq>monthly</changefreq>
@@ -562,8 +555,8 @@
   </url>
   
   <url>
-    <loc>https://newcoding.co.kr/javascript/special/4/</loc>
-    <lastmod>2021-06-14</lastmod>
+    <loc>https://newcoding.co.kr/javascript/special/5/</loc>
+    <lastmod>2021-09-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -571,6 +564,13 @@
   <url>
     <loc>https://newcoding.co.kr/javascript/special/3/</loc>
     <lastmod>2021-04-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://newcoding.co.kr/javascript/special/4/</loc>
+    <lastmod>2021-06-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -597,15 +597,15 @@
   </url>
   
   <url>
-    <loc>https://newcoding.co.kr/javascript/special/13/</loc>
-    <lastmod>2024-04-09</lastmod>
+    <loc>https://newcoding.co.kr/javascript/special/12/</loc>
+    <lastmod>2024-02-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://newcoding.co.kr/javascript/special/12/</loc>
-    <lastmod>2024-02-18</lastmod>
+    <loc>https://newcoding.co.kr/javascript/special/13/</loc>
+    <lastmod>2024-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -618,15 +618,15 @@
   </url>
   
   <url>
-    <loc>https://newcoding.co.kr/javascript/special/10/</loc>
-    <lastmod>2023-12-23</lastmod>
+    <loc>https://newcoding.co.kr/javascript/special/1/</loc>
+    <lastmod>2020-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://newcoding.co.kr/javascript/special/1/</loc>
-    <lastmod>2020-09-11</lastmod>
+    <loc>https://newcoding.co.kr/javascript/special/10/</loc>
+    <lastmod>2023-12-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -730,15 +730,15 @@
   </url>
   
   <url>
-    <loc>https://newcoding.co.kr/javascript/detail/16/</loc>
-    <lastmod>2024-02-24</lastmod>
+    <loc>https://newcoding.co.kr/javascript/detail/17/</loc>
+    <lastmod>2024-03-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://newcoding.co.kr/javascript/detail/17/</loc>
-    <lastmod>2024-03-14</lastmod>
+    <loc>https://newcoding.co.kr/javascript/detail/16/</loc>
+    <lastmod>2024-02-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -751,15 +751,15 @@
   </url>
   
   <url>
-    <loc>https://newcoding.co.kr/javascript/detail/13/</loc>
-    <lastmod>2024-01-04</lastmod>
+    <loc>https://newcoding.co.kr/javascript/detail/14/</loc>
+    <lastmod>2024-01-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://newcoding.co.kr/javascript/detail/14/</loc>
-    <lastmod>2024-01-19</lastmod>
+    <loc>https://newcoding.co.kr/javascript/detail/13/</loc>
+    <lastmod>2024-01-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -779,15 +779,15 @@
   </url>
   
   <url>
-    <loc>https://newcoding.co.kr/javascript/detail/10/</loc>
-    <lastmod>2023-10-09</lastmod>
+    <loc>https://newcoding.co.kr/javascript/detail/1/</loc>
+    <lastmod>2023-01-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://newcoding.co.kr/javascript/detail/1/</loc>
-    <lastmod>2023-01-14</lastmod>
+    <loc>https://newcoding.co.kr/javascript/detail/10/</loc>
+    <lastmod>2023-10-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -835,15 +835,15 @@
   </url>
   
   <url>
-    <loc>https://newcoding.co.kr/javascript/basic/2/</loc>
-    <lastmod>2020-04-11</lastmod>
+    <loc>https://newcoding.co.kr/javascript/basic/3/</loc>
+    <lastmod>2020-04-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://newcoding.co.kr/javascript/basic/3/</loc>
-    <lastmod>2020-04-14</lastmod>
+    <loc>https://newcoding.co.kr/javascript/basic/2/</loc>
+    <lastmod>2020-04-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -898,15 +898,15 @@
   </url>
   
   <url>
-    <loc>https://newcoding.co.kr/express/troubleshooting/4/</loc>
-    <lastmod>2024-01-29</lastmod>
+    <loc>https://newcoding.co.kr/express/troubleshooting/5/</loc>
+    <lastmod>2024-01-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://newcoding.co.kr/express/troubleshooting/5/</loc>
-    <lastmod>2024-01-30</lastmod>
+    <loc>https://newcoding.co.kr/express/troubleshooting/4/</loc>
+    <lastmod>2024-01-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -982,15 +982,15 @@
   </url>
   
   <url>
-    <loc>https://newcoding.co.kr/design-pattern/8/</loc>
-    <lastmod>2022-07-28</lastmod>
+    <loc>https://newcoding.co.kr/design-pattern/7/</loc>
+    <lastmod>2022-07-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://newcoding.co.kr/design-pattern/7/</loc>
-    <lastmod>2022-07-27</lastmod>
+    <loc>https://newcoding.co.kr/design-pattern/8/</loc>
+    <lastmod>2022-07-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -1178,15 +1178,15 @@
   </url>
   
   <url>
-    <loc>https://newcoding.co.kr/cli/1/</loc>
-    <lastmod>2022-03-16</lastmod>
+    <loc>https://newcoding.co.kr/cli/10/</loc>
+    <lastmod>2023-05-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://newcoding.co.kr/cli/10/</loc>
-    <lastmod>2023-05-25</lastmod>
+    <loc>https://newcoding.co.kr/cli/1/</loc>
+    <lastmod>2022-03-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -1255,13 +1255,6 @@
   </url>
   
   <url>
-    <loc>https://newcoding.co.kr/algorithm/newb/12/</loc>
-    <lastmod>2023-03-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://newcoding.co.kr/algorithm/newb/13/</loc>
     <lastmod>2023-04-03</lastmod>
     <changefreq>monthly</changefreq>
@@ -1269,8 +1262,8 @@
   </url>
   
   <url>
-    <loc>https://newcoding.co.kr/algorithm/newb/10/</loc>
-    <lastmod>2023-03-20</lastmod>
+    <loc>https://newcoding.co.kr/algorithm/newb/12/</loc>
+    <lastmod>2023-03-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -1278,6 +1271,13 @@
   <url>
     <loc>https://newcoding.co.kr/algorithm/newb/11/</loc>
     <lastmod>2023-03-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://newcoding.co.kr/algorithm/newb/10/</loc>
+    <lastmod>2023-03-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
