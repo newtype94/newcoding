@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>NewCoding</title>
-  <meta name="keywords" content="">
-  <meta name="description" content="NewCoding Javascript Node.js and web3 tech blog">
+  <title>트랜잭션 격리 수준 (Isolation Level) | NewCoding</title>
+  <meta name="keywords" content="트랜잭션 격리 수준 (Isolation Level)">
+  <meta name="description" content="트랜잭션 격리 수준 (Isolation Level)  이번 시간에는 데이터베이스에서 트랜잭션의 격리 수준(Isolation Level)에 대해 알아보겠습니다. 트랜잭션 격리 수준은 데이터베이스의 일관성과 성능을 유지하는 데 중요한 역할을 합니다. 특히, 여러 트랜잭션이">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
@@ -33,10 +33,10 @@
 <script src="/js/iconfont.js?v=1.1.0" ></script>
 
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7106090514202944" crossorigin="anonymous"></script>
-	<meta property="og:title" content="NewCoding">
-	<meta property="og:description" content="NewCoding Javascript Node.js and web3 tech blog">
+	<meta property="og:title" content="트랜잭션 격리 수준 (Isolation Level)">
+	<meta property="og:description" content="트랜잭션 격리 수준 (Isolation Level)  이번 시간에는 데이터베이스에서 트랜잭션의 격리 수준(Isolation Level)에 대해 알아보겠습니다. 트랜잭션 격리 수준은 데이터베이스의 일관성과 성능을 유지하는 데 중요한 역할을 합니다. 특히, 여러 트랜잭션이">
 	<meta property="og:type" content="article">
-	<meta property="og:url" content="https://newcoding.co.kr/archives/page/12/index.html">
+	<meta property="og:url" content="https://newcoding.co.kr/database/basic/13/">
 	<meta property="og:image" content="/img/fav2.png">
 	<meta property="og:site_name" content="NewCoding">
 	<meta property="og:locale" content="ko">
@@ -56,44 +56,8 @@
 
 
 
-<head>
-  <style>
-	/* summary 태그의 기본 스타일 설정 */
-	summary {
-	  cursor: pointer; /* 마우스 커서를 포인터로 변경 */
-	}
-
-	/* summary 태그 내부의 span 태그 스타일 설정 */
-	summary > span {
-	  cursor: pointer; /* 마우스 커서를 포인터로 변경 */
-	  font-weight: bold; /* 텍스트를 굵게 설정 */
-	  color: #0269C9; /* 텍스트 색상을 파란색으로 설정 */
-	}
-	
-	/* summary 태그에 마우스를 올렸을 때 스타일 설정 */
-	summary:hover {
-	  color: SeaGreen; /* 텍스트 색상을 시그린으로 변경 */
-	  text-decoration: underline; /* 밑줄 추가 */
-	  font-weight: bold; /* 텍스트를 굵게 설정 */
-	}
-
-	/* ol 리스트의 첫 번째 li 태그 스타일 설정 */
-	ol li:first-child {
-	  font-weight: bold; /* 텍스트를 굵게 설정 */
-	}
-
-	/* a 태그에 마우스를 올렸을 때 스타일 설정 */
-	ol li a:hover {
-	  color: white; /* 텍스트 색상을 흰색으로 변경 */
-	  font-weight: bold; /* 텍스트를 굵게 설정 */
-	  border-radius: 7px; /* 테두리를 둥글게 설정 */
-	  padding: 2px 5px; /* 내부 여백 설정 */
-	  background-color: Lavender; /* 배경 색상을 라벤더 색으로 변경 */
-	}
-  </style>
-</head>
 <body>
-<aside class="nav mobile">
+<aside class="nav">
     <div class="nav-left">
         <a href="/"
    class="avatar_target">
@@ -2071,18 +2035,60 @@
 
     </div>
     <div class="hide-list">
-        <div class="semicircle" data-title="전체화면 단축키 s">
+        <div class="semicircle" data-title="전체 화면 단축키 s">
             <div class="brackets first"><</div>
             <div class="brackets">&gt;</div>
         </div>
     </div>
 </aside>
-<div id="post" class="index">
+<div id="post">
     <div class="pjax">
-        <article class="index">
-            <div class="toc-ref">
+        <article id="post-database/basic/13" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#new-Coding-%F0%9F%93%88-%F0%9F%8F%A0-%F0%9F%9A%80-%F0%9F%92%9A-%F0%9F%8E%AE"><span class="toc-text">new Coding(📈,🏠,🚀,💚,🎮)</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%EC%95%88%EB%85%95%ED%95%98%EC%84%B8%EC%9A%94"><span class="toc-text">안녕하세요</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#JS-%EA%B8%B0%EB%B3%B8%EA%B8%B0"><span class="toc-text">JS 기본기</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#JS-%ED%95%84%EC%82%B4%EA%B8%B0"><span class="toc-text">JS 필살기</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#JS-%EB%94%94%ED%85%8C%EC%9D%BC"><span class="toc-text">JS 디테일</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#TS-%EA%B8%B0%EB%B3%B8%EA%B8%B0"><span class="toc-text">TS 기본기</span></a></li></ol></li></ol>
+        <h1 class="article-title">트랜잭션 격리 수준 (Isolation Level)</h1>
+    
+    <div class="article-meta">
+        
+        
+        <span class="author"><a>뉴코딩</a></span>
+        <br>
+        
+        
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="database_기본기">database_기본기</a>
+            
+        </span>
+        
+        
+    </div>
+    <div class="article-meta">
+        
+            작성일 : <time class="date" title='업데이트 일자: 2024-08-12'>2023-12-22</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        
+        <span id="busuanzi_container_page_pv">
+            조회수 👀 :<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98-%EA%B2%A9%EB%A6%AC-%EC%88%98%EC%A4%80-Isolation-Level"><span class="toc-text">트랜잭션 격리 수준 (Isolation Level)</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98-%EA%B2%A9%EB%A6%AC-%EC%88%98%EC%A4%80%EC%9D%B4%EB%9E%80"><span class="toc-text">트랜잭션 격리 수준이란?</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98-%EA%B2%A9%EB%A6%AC-%EC%88%98%EC%A4%80%EA%B3%BC-%EB%AC%B8%EC%A0%9C%EC%A0%90"><span class="toc-text">트랜잭션 격리 수준과 문제점</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98-%EA%B2%A9%EB%A6%AC-%EC%88%98%EC%A4%80%EC%9D%98-%EC%A2%85%EB%A5%98"><span class="toc-text">트랜잭션 격리 수준의 종류</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-READ-UNCOMMITTED-%EC%9D%BD%EA%B8%B0-%EB%AF%B8%EC%99%84%EB%A3%8C"><span class="toc-text">1. READ UNCOMMITTED (읽기 미완료)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-READ-COMMITTED-%EC%9D%BD%EA%B8%B0-%EC%BB%A4%EB%B0%8B%EB%90%A8"><span class="toc-text">2. READ COMMITTED (읽기 커밋됨)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-REPEATABLE-READ-%EB%B0%98%EB%B3%B5-%EA%B0%80%EB%8A%A5%ED%95%9C-%EC%9D%BD%EA%B8%B0"><span class="toc-text">3. REPEATABLE READ (반복 가능한 읽기)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-SERIALIZABLE-%EC%A7%81%EB%A0%AC%ED%99%94-%EA%B0%80%EB%8A%A5"><span class="toc-text">4. SERIALIZABLE (직렬화 가능)</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%EA%B2%A9%EB%A6%AC-%EC%88%98%EC%A4%80-%EC%8B%A4%EC%8A%B5"><span class="toc-text">격리 수준 실습</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98-%EA%B2%A9%EB%A6%AC-%EC%88%98%EC%A4%80-%EC%84%A4%EC%A0%95"><span class="toc-text">트랜잭션 격리 수준 설정</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%EA%B2%B0%EB%A1%A0"><span class="toc-text">결론</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -2095,113 +2101,133 @@
     }
 </style>
 </div>
-            <h1 id="new-Coding-📈-🏠-🚀-💚-🎮"><a href="#new-Coding-📈-🏠-🚀-💚-🎮" class="headerlink" title="new Coding(📈,🏠,🚀,💚,🎮)"></a>new Coding(📈,🏠,🚀,💚,🎮)</h1><h2 id="안녕하세요"><a href="#안녕하세요" class="headerlink" title="안녕하세요"></a>안녕하세요</h2><p>📈 본업으로 블록체인을 개발하는 개발자입니다.</p>
-<p>🏠 여기는 제가 공부한 내용들을 정리하는 곳입니다.</p>
-<p>🚀 언제든 꺼내 볼 수 있도록 간결한 사전 형식으로 디자인했습니다.</p>
-<p>💚 운영자가 JS를 좋아해서 대부분 개념은 JS를 기반으로 다룹니다.</p>
-<p>🎮 각 설명의 예제는 가능하면 RPG게임 테마로 작성했습니다.</p>
-<h2 id="JS-기본기"><a href="#JS-기본기" class="headerlink" title="JS 기본기"></a>JS 기본기</h2><blockquote>
-<p>JS 기본기를 학습하기 위한 구성입니다. backend, frontend를 시작하기 위해서 필수로 알아야합니다.</p>
-</blockquote>
-<details>
-<summary>첫 글 <span>`변수와 데이터 타입`</span> 부터 공부해보세요!</summary>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="트랜잭션-격리-수준-Isolation-Level"><a href="#트랜잭션-격리-수준-Isolation-Level" class="headerlink" title="트랜잭션 격리 수준 (Isolation Level)"></a>트랜잭션 격리 수준 (Isolation Level)</h1><p>안녕하세요. <strong>뉴코딩</strong>입니다!<br>이번 시간에는 데이터베이스에서 트랜잭션의 격리 수준(Isolation Level)에 대해 알아보겠습니다.<br>트랜잭션 격리 수준은 데이터베이스의 일관성과 성능을 유지하는 데 중요한 역할을 합니다.<br>특히, 여러 트랜잭션이 동시에 실행될 때 발생할 수 있는 문제를 방지하는 데 중요한 개념입니다.</p>
+<h2 id="트랜잭션-격리-수준이란"><a href="#트랜잭션-격리-수준이란" class="headerlink" title="트랜잭션 격리 수준이란?"></a>트랜잭션 격리 수준이란?</h2><p>트랜잭션 격리 수준(Isolation Level)은 여러 트랜잭션이 동시에 실행될 때 서로 간섭하지 않도록 격리하는 정도를 의미합니다.<br>격리 수준에 따라 트랜잭션이 데이터에 접근하는 방식이 달라지며, 각 격리 수준은 데이터의 일관성과 성능에 영향을 미칩니다.</p>
+<h3 id="트랜잭션-격리-수준과-문제점"><a href="#트랜잭션-격리-수준과-문제점" class="headerlink" title="트랜잭션 격리 수준과 문제점"></a>트랜잭션 격리 수준과 문제점</h3><p>격리 수준에 따라 발생할 수 있는 데이터 일관성 문제는 다음과 같습니다:</p>
+<ul>
+<li><strong>더티 리드(Dirty Read)</strong>: 다른 트랜잭션에서 아직 커밋되지 않은 데이터를 읽는 문제.</li>
+<li><strong>반복 불가능한 읽기(Non-repeatable Read)</strong>: 동일한 데이터를 읽는 도중 다른 트랜잭션이 그 데이터를 변경하여 결과가 달라지는 문제.</li>
+<li><strong>팬텀 리드(Phantom Read)</strong>: 트랜잭션 도중 다른 트랜잭션이 데이터를 삽입하거나 삭제하여 결과 세트가 달라지는 문제.</li>
+</ul>
+<h2 id="트랜잭션-격리-수준의-종류"><a href="#트랜잭션-격리-수준의-종류" class="headerlink" title="트랜잭션 격리 수준의 종류"></a>트랜잭션 격리 수준의 종류</h2><p>트랜잭션 격리 수준은 다음과 같이 네 가지로 구분됩니다. 각 수준에 따른 문제 발생 가능성을 표로 정리하면 다음과 같습니다:</p>
+<table>
+<thead>
+<tr>
+<th>격리 수준</th>
+<th>더티 리드(Dirty Read)</th>
+<th>반복 불가능한 읽기(Non-repeatable Read)</th>
+<th>팬텀 리드(Phantom Read)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>READ UNCOMMITTED</strong></td>
+<td>발생 가능</td>
+<td>발생 가능</td>
+<td>발생 가능</td>
+</tr>
+<tr>
+<td><strong>READ COMMITTED</strong></td>
+<td>발생하지 않음</td>
+<td>발생 가능</td>
+<td>발생 가능</td>
+</tr>
+<tr>
+<td><strong>REPEATABLE READ</strong></td>
+<td>발생하지 않음</td>
+<td>발생하지 않음</td>
+<td>발생 가능</td>
+</tr>
+<tr>
+<td><strong>SERIALIZABLE</strong></td>
+<td>발생하지 않음</td>
+<td>발생하지 않음</td>
+<td>발생하지 않음</td>
+</tr>
+</tbody></table>
+<h3 id="1-READ-UNCOMMITTED-읽기-미완료"><a href="#1-READ-UNCOMMITTED-읽기-미완료" class="headerlink" title="1. READ UNCOMMITTED (읽기 미완료)"></a>1. READ UNCOMMITTED (읽기 미완료)</h3><ul>
+<li><strong>특징</strong>: 가장 낮은 격리 수준으로, 다른 트랜잭션에서 아직 커밋되지 않은 데이터를 읽을 수 있습니다.</li>
+<li><strong>장점</strong>: 성능이 높지만 데이터의 일관성이 보장되지 않습니다.</li>
+<li><strong>단점</strong>: 더티 리드, 반복 불가능한 읽기, 팬텀 리드 문제가 발생할 수 있습니다.</li>
+</ul>
+<h3 id="2-READ-COMMITTED-읽기-커밋됨"><a href="#2-READ-COMMITTED-읽기-커밋됨" class="headerlink" title="2. READ COMMITTED (읽기 커밋됨)"></a>2. READ COMMITTED (읽기 커밋됨)</h3><ul>
+<li><strong>특징</strong>: 다른 트랜잭션에서 커밋된 데이터만 읽을 수 있습니다.</li>
+<li><strong>장점</strong>: 더티 리드 문제는 발생하지 않습니다.</li>
+<li><strong>단점</strong>: 반복 불가능한 읽기와 팬텀 리드 문제가 발생할 수 있습니다.</li>
+</ul>
+<h3 id="3-REPEATABLE-READ-반복-가능한-읽기"><a href="#3-REPEATABLE-READ-반복-가능한-읽기" class="headerlink" title="3. REPEATABLE READ (반복 가능한 읽기)"></a>3. REPEATABLE READ (반복 가능한 읽기)</h3><ul>
+<li><strong>특징</strong>: 트랜잭션이 시작된 후에 읽은 데이터는 변경되지 않습니다.</li>
+<li><strong>장점</strong>: 더티 리드와 반복 불가능한 읽기 문제가 발생하지 않습니다.</li>
+<li><strong>단점</strong>: 팬텀 리드 문제는 여전히 발생할 수 있습니다.</li>
+</ul>
+<h3 id="4-SERIALIZABLE-직렬화-가능"><a href="#4-SERIALIZABLE-직렬화-가능" class="headerlink" title="4. SERIALIZABLE (직렬화 가능)"></a>4. SERIALIZABLE (직렬화 가능)</h3><ul>
+<li><strong>특징</strong>: 가장 높은 격리 수준으로, 트랜잭션이 순차적으로 실행되어 데이터의 완전한 일관성을 보장합니다.</li>
+<li><strong>장점</strong>: 모든 데이터 일관성 문제가 해결됩니다.</li>
+<li><strong>단점</strong>: 성능이 가장 낮으며, 동시성 문제가 발생할 수 있습니다.</li>
+</ul>
+<h2 id="격리-수준-실습"><a href="#격리-수준-실습" class="headerlink" title="격리 수준 실습"></a>격리 수준 실습</h2><p>이번에는 MySQL2 모듈을 사용하여 트랜잭션 격리 수준을 설정하고 테스트해보겠습니다.</p>
+<h3 id="트랜잭션-격리-수준-설정"><a href="#트랜잭션-격리-수준-설정" class="headerlink" title="트랜잭션 격리 수준 설정"></a>트랜잭션 격리 수준 설정</h3><p>MySQL2에서 트랜잭션의 격리 수준을 설정하려면 <code>SET TRANSACTION ISOLATION LEVEL</code> 명령어를 사용합니다.</p>
+<p><strong>src&#x2F;transaction-isolation.js</strong></p>
+<pre><code class="highlight javascript"><span class="keyword">const</span> pool = <span class="built_in">require</span>(<span class="string">&quot;./db&quot;</span>);
 
-<ol>
-<li><a href="/javascript/basic/1">JavaScript 변수와 데이터 타입</a></li>
-<li>JavaScript 연산자와 표현식</li>
-<li>JavaScript 조건문 (if, else if, else, switch)</li>
-<li>JavaScript 반복문 (for, while, do…while)</li>
-<li>JavaScript 함수 정의 및 호출</li>
-<li>JavaScript 배열과 배열 메서드</li>
-<li>JavaScript 객체와 객체 프로퍼티</li>
-<li>JavaScript 이벤트 처리</li>
-<li>JavaScript DOM 조작</li>
-<li>JavaScript 비동기 프로그래밍 (콜백, 프로미스)</li>
-<li>JavaScript 배열 메서드 reduce, map 심화</li>
-</ol>
-</details>
+<span class="keyword">async</span> <span class="keyword">function</span> <span class="title function_">testIsolationLevel</span>(<span class="params"></span>) &#123;
+  <span class="keyword">const</span> connection = <span class="keyword">await</span> pool.<span class="title function_">getConnection</span>();
+  <span class="keyword">try</span> &#123;
+    <span class="comment">// 트랜잭션 시작</span>
+    <span class="keyword">await</span> connection.<span class="title function_">beginTransaction</span>();
 
-<h2 id="JS-필살기"><a href="#JS-필살기" class="headerlink" title="JS 필살기"></a>JS 필살기</h2><blockquote>
-<p>JS 중급 이상의 내용을 학습하기 위한 구성입니다.</p>
-</blockquote>
-<details>
-<summary>첫 글 <span>`JavaScript 이벤트 루프 이해하기`</span> 부터 공부해보세요!</summary>
+    <span class="comment">// 격리 수준 설정</span>
+    <span class="keyword">await</span> connection.<span class="title function_">query</span>(<span class="string">&quot;SET TRANSACTION ISOLATION LEVEL REPEATABLE READ&quot;</span>);
 
-<ol>
-<li><a href="/javascript/special/1">JavaScript 이벤트 루프 이해하기</a></li>
-<li>TypeScript로 JavaScript 코드 안전하게 작성하기</li>
-<li>JavaScript 클로저(Closures) 완벽 가이드</li>
-<li>JavaScript 프로미스 체이닝과 에러 핸들링</li>
-<li>JavaScript 모듈 시스템 이해하기 - CommonJS, AMD, 그리고 ES6 모듈</li>
-<li>함수형 프로그래밍 기법을 JavaScript에 적용하기</li>
-<li>Javascript async&#x2F;await와 Promises의 차이점</li>
-<li>JavaScript 비동기 반복(iteration) - for-await-of 루프</li>
-<li>JavaScript에서 여러 비동기 요청 한번에 처리하기</li>
-<li>JavaScript 메모리 관리와 가비지 컬렉션</li>
-<li>JavaScript 정규 표현식(Regular Expressions)</li>
-<li>JavaScript 프로토타입 상속(Prototype Inheritance)</li>
-<li>JavaScript 웹 워커(Web Workers)를 사용하여 멀티스레딩 구현하기</li>
-<li>JavaScript this의 다양한 사용 방식과 상황별 정리</li>
-<li>JavaScript require와 import의 차이</li>
-</ol>
-</details>
+    <span class="comment">// 첫 번째 읽기</span>
+    <span class="keyword">const</span> [rows] = <span class="keyword">await</span> connection.<span class="title function_">query</span>(
+      <span class="string">&quot;SELECT * FROM character WHERE id = 1&quot;</span>
+    );
+    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;첫 번째 읽기:&quot;</span>, rows);
 
-<h2 id="JS-디테일"><a href="#JS-디테일" class="headerlink" title="JS 디테일"></a>JS 디테일</h2><blockquote>
-<p>현업에서 일하다보면 친한 사람한테 구두로 전승해주는 그런 내용들입니다. 몰라도 코딩하는데는 지장이 없지만, 알면 앞으로 코딩하기 편한.. 그런 문법들을 정리해놓았습니다.</p>
-</blockquote>
-<details>
-<summary>첫 글 <span>`JavaScript 비구조화 할당 (Destructuring Assignment)`</span> 부터 공부해보세요!</summary>
+    <span class="comment">// 다른 트랜잭션에서 데이터를 변경하는 로직을 시뮬레이션할 수 있습니다.</span>
 
-<ol>
-<li><a href="/javascript/detail/1">Javascript 비구조화 할당 (Destructuring Assignment)</a></li>
-<li>Javascript 화살표 함수 (Arrow Functions)</li>
-<li>Javascript 템플릿 리터럴 (Template Literals)</li>
-<li>Javascript 디폴트 파라미터 (Default Parameters)</li>
-<li>Javascript 스프레드 연산자 (Spread Operator)</li>
-<li>Javascript 나머지 매개변수 (Rest Parameters)</li>
-<li>Javascript for…of 루프와 for…in 루프</li>
-<li>Javascript 객체 리터럴 확장 (Object Literal Extensions)</li>
-<li>Javascript 선택적 체이닝 (Optional Chaining)과 Null 병합 연산자 (Nullish Coalescing)</li>
-<li>Javascript 클래스 (Classes)</li>
-<li>Javascript 모듈 (Modules)</li>
-<li>Javascript Map과 Set</li>
-<li>Javascript WeakMap과 WeakSet</li>
-<li>Javascript 심볼 (Symbols)</li>
-<li>Javascript 제너레이터 (Generators)</li>
-<li>Javascript 프록시 (Proxy)</li>
-<li>Javascript Reflect API</li>
-<li>Javascript 커링 (Currying)</li>
-<li>Javascript 고차 함수(Higher-Order Functions)</li>
-<li>Javascript 데코레이터(Decorators)</li>
-<li>Javascript 함수 합성(Composition)</li>
-<li>Javascript 타입 검사(Type Checking)</li>
-<li>Javascript 프로미스 체이닝(Promise Chaining)</li>
-</ol>
-</details>
+    <span class="comment">// 두 번째 읽기</span>
+    <span class="keyword">const</span> [rows2] = <span class="keyword">await</span> connection.<span class="title function_">query</span>(
+      <span class="string">&quot;SELECT * FROM character WHERE id = 1&quot;</span>
+    );
+    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;두 번째 읽기:&quot;</span>, rows2);
 
-<h2 id="TS-기본기"><a href="#TS-기본기" class="headerlink" title="TS 기본기"></a>TS 기본기</h2><blockquote>
-<p>TypeScript는 enterprise급 백엔드나 프론트를 만들 때 필수죠..</p>
-</blockquote>
-<details>
-<summary>첫 글 <span>`TypeScript 설치 및 설정`</span> 부터 공부해보세요!</summary>
+    <span class="comment">// 트랜잭션 커밋</span>
+    <span class="keyword">await</span> connection.<span class="title function_">commit</span>();
+  &#125; <span class="keyword">catch</span> (error) &#123;
+    <span class="comment">// 트랜잭션 롤백</span>
+    <span class="keyword">await</span> connection.<span class="title function_">rollback</span>();
+    <span class="variable language_">console</span>.<span class="title function_">error</span>(<span class="string">&quot;트랜잭션 오류 발생:&quot;</span>, error.<span class="property">message</span>);
+  &#125; <span class="keyword">finally</span> &#123;
+    connection.<span class="title function_">release</span>();
+  &#125;
+&#125;
 
-<ol>
-<li><a href="/typescript/basic/1/">TypeScript 설치 및 설정</a></li>
-<li>TypesScript 타입 시스템 이해하기</li>
-<li>TypeScript 인터페이스와 타입 별칭 사용법</li>
-<li>TypeScript 제네릭(Generic) 사용법</li>
-<li>TypeScript 열거형(Enum) 활용법</li>
-<li>TypeScript 유니언 타입과 인터섹션 타입</li>
-<li>TypeScript 타입 가드와 타입 좁히기</li>
-<li>TypeScript 타입 선언 파일 작성 및 사용</li>
-<li>TypeScript 비동기 처리 (async&#x2F;await)와 Promise 타입</li>
-<li>TypeScript 클래스와 인터페이스</li>
-<li>TypeScript에서 함수형 프로그래밍</li>
-</ol>
-</details>
+<span class="title function_">testIsolationLevel</span>().<span class="title function_">catch</span>(<span class="variable language_">console</span>.<span class="property">error</span>);</code></pre>
 
-        </article>
-        
+<p>이 예제에서는 <code>REPEATABLE READ</code> 격리 수준을 설정하여 트랜잭션 내에서 동일한 데이터를 읽을 때 동일한 결과가 반환되도록 보장합니다.</p>
+<h2 id="결론"><a href="#결론" class="headerlink" title="결론"></a>결론</h2><p>이번 시간에는 트랜잭션 격리 수준에 대해 알아보고, 각각의 격리 수준이 데이터 일관성에 미치는 영향을 살펴보았습니다. 각 격리 수준은 성능과 일관성 간의 트레이드오프를 가지고 있으므로, 애플리케이션의 요구사항에 맞는 격리 수준을 선택하는 것이 중요합니다.</p>
+<p>감사합니다!</p>
+
+      
+       <hr><span style="font-style: italic;color: gray;"> 퍼가실 때는 출처를 밝혀 주세요~ </span>
+    </div>
+</article>
+
+
+
+
+
+
+
+    
+
+
+
+
     </div>
     <div class="copyright">
         <p class="footer-entry">
@@ -2209,11 +2235,11 @@
 </p>
 
     </div>
-</div>
-<div class="full-toc">
-    <button class="full" data-title="전체 화면 단축키 s"><span class="min "></span></button>
+    <div class="full-toc">
+        <button class="full" data-title="전체 화면 단축키 s"><span class="min "></span></button>
 <a class="" id="rocket" ></a>
 
+    </div>
 </div>
 </body>
 <script src="/js/jquery.pjax.js?v=1.1.0" ></script>
