@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>TypeScript 타입 선언 파일 작성 시 주의사항과 문제 해결 | NewCoding</title>
-  <meta name="keywords" content="TypeScript 타입 선언 파일 작성 시 주의사항과 문제 해결">
-  <meta name="description" content="TypeScript 타입 선언 파일 작성 시 주의사항과 문제 해결  이번 시간에는 TypeScript에서 타입 선언 파일을 작성할 때 주의해야 할 사항들과 발생할 수 있는 문제들을 해결하는 방법에 대해 알아보겠습니다. 타입 선언 파일은 외부 JavaScript 라이브러">
+  <title>NewCoding</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="NewCoding Javascript Node.js and web3 tech blog">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
@@ -33,10 +33,10 @@
 <script src="/js/iconfont.js?v=1.1.0" ></script>
 
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7106090514202944" crossorigin="anonymous"></script>
-	<meta property="og:title" content="TypeScript 타입 선언 파일 작성 시 주의사항과 문제 해결">
-	<meta property="og:description" content="TypeScript 타입 선언 파일 작성 시 주의사항과 문제 해결  이번 시간에는 TypeScript에서 타입 선언 파일을 작성할 때 주의해야 할 사항들과 발생할 수 있는 문제들을 해결하는 방법에 대해 알아보겠습니다. 타입 선언 파일은 외부 JavaScript 라이브러">
+	<meta property="og:title" content="NewCoding">
+	<meta property="og:description" content="NewCoding Javascript Node.js and web3 tech blog">
 	<meta property="og:type" content="article">
-	<meta property="og:url" content="https://newcoding.co.kr/typescript/troubleshooting/3/">
+	<meta property="og:url" content="https://newcoding.co.kr/archives/2020/12/index.html">
 	<meta property="og:image" content="/img/fav2.png">
 	<meta property="og:site_name" content="NewCoding">
 	<meta property="og:locale" content="ko">
@@ -56,8 +56,44 @@
 
 
 
+<head>
+  <style>
+	/* summary 태그의 기본 스타일 설정 */
+	summary {
+	  cursor: pointer; /* 마우스 커서를 포인터로 변경 */
+	}
+
+	/* summary 태그 내부의 span 태그 스타일 설정 */
+	summary > span {
+	  cursor: pointer; /* 마우스 커서를 포인터로 변경 */
+	  font-weight: bold; /* 텍스트를 굵게 설정 */
+	  color: #0269C9; /* 텍스트 색상을 파란색으로 설정 */
+	}
+	
+	/* summary 태그에 마우스를 올렸을 때 스타일 설정 */
+	summary:hover {
+	  color: SeaGreen; /* 텍스트 색상을 시그린으로 변경 */
+	  text-decoration: underline; /* 밑줄 추가 */
+	  font-weight: bold; /* 텍스트를 굵게 설정 */
+	}
+
+	/* ol 리스트의 첫 번째 li 태그 스타일 설정 */
+	ol li:first-child {
+	  font-weight: bold; /* 텍스트를 굵게 설정 */
+	}
+
+	/* a 태그에 마우스를 올렸을 때 스타일 설정 */
+	ol li a:hover {
+	  color: white; /* 텍스트 색상을 흰색으로 변경 */
+	  font-weight: bold; /* 텍스트를 굵게 설정 */
+	  border-radius: 7px; /* 테두리를 둥글게 설정 */
+	  padding: 2px 5px; /* 내부 여백 설정 */
+	  background-color: Lavender; /* 배경 색상을 라벤더 색으로 변경 */
+	}
+  </style>
+</head>
 <body>
-<aside class="nav">
+<aside class="nav mobile">
     <div class="nav-left">
         <a href="/"
    class="avatar_target">
@@ -2080,60 +2116,18 @@
 
     </div>
     <div class="hide-list">
-        <div class="semicircle" data-title="전체 화면 단축키 s">
+        <div class="semicircle" data-title="전체화면 단축키 s">
             <div class="brackets first"><</div>
             <div class="brackets">&gt;</div>
         </div>
     </div>
 </aside>
-<div id="post">
+<div id="post" class="index">
     <div class="pjax">
-        <article id="post-typescript/troubleshooting/3" class="article article-type-post" itemscope itemprop="blogPost">
+        <article class="index">
+            <div class="toc-ref">
     
-        <h1 class="article-title">TypeScript 타입 선언 파일 작성 시 주의사항과 문제 해결</h1>
-    
-    <div class="article-meta">
-        
-        
-        <span class="author"><a>뉴코딩</a></span>
-        <br>
-        
-        
-        <span class="book">
-            <i class="iconfont icon-category"></i>
-            
-            
-            <a  data-rel="TS_트러블슈팅">TS_트러블슈팅</a>
-            
-        </span>
-        
-        
-    </div>
-    <div class="article-meta">
-        
-            작성일 : <time class="date" title='업데이트 일자: 2024-08-08'>2023-07-23</time>
-        
-    </div>
-    <div class="article-meta">
-        
-        
-        <span id="busuanzi_container_page_pv">
-            조회수 👀 :<span id="busuanzi_value_page_pv">
-                <span class="count-comment">
-                    <span class="spinner">
-                      <div class="cube1"></div>
-                      <div class="cube2"></div>
-                    </span>
-                </span>
-            </span>
-        </span>
-        
-        
-    </div>
-    
-    <div class="toc-ref">
-    
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#TypeScript-%ED%83%80%EC%9E%85-%EC%84%A0%EC%96%B8-%ED%8C%8C%EC%9D%BC-%EC%9E%91%EC%84%B1-%EC%8B%9C-%EC%A3%BC%EC%9D%98%EC%82%AC%ED%95%AD%EA%B3%BC-%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0"><span class="toc-text">TypeScript 타입 선언 파일 작성 시 주의사항과 문제 해결</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%ED%83%80%EC%9E%85-%EC%84%A0%EC%96%B8-%ED%8C%8C%EC%9D%BC%EC%9D%98-%EA%B0%9C%EB%85%90"><span class="toc-text">타입 선언 파일의 개념</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%ED%83%80%EC%9E%85-%EC%84%A0%EC%96%B8-%ED%8C%8C%EC%9D%BC%EC%9D%B4%EB%9E%80"><span class="toc-text">타입 선언 파일이란?</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%ED%83%80%EC%9E%85-%EC%84%A0%EC%96%B8-%ED%8C%8C%EC%9D%BC-%EC%9E%91%EC%84%B1-%EC%8B%9C-%EC%A3%BC%EC%9D%98%EC%82%AC%ED%95%AD"><span class="toc-text">타입 선언 파일 작성 시 주의사항</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%EC%A0%95%ED%99%95%ED%95%9C-%ED%83%80%EC%9E%85-%EC%A0%95%EC%9D%98"><span class="toc-text">1. 정확한 타입 정의</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%EB%84%A4%EC%9E%84%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%99%80-%EB%AA%A8%EB%93%88-%EA%B5%AC%EB%B6%84"><span class="toc-text">2. 네임스페이스와 모듈 구분</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%EC%98%A4%EB%B2%84%EB%A1%9C%EB%94%A9"><span class="toc-text">3. 오버로딩</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0"><span class="toc-text">문제 해결</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%EB%AC%B8%EC%A0%9C-1-%ED%83%80%EC%9E%85-%EC%84%A0%EC%96%B8-%ED%8C%8C%EC%9D%BC%EC%9D%B4-%EC%9D%B8%EC%8B%9D%EB%90%98%EC%A7%80-%EC%95%8A%EB%8A%94-%EA%B2%BD%EC%9A%B0"><span class="toc-text">문제 1: 타입 선언 파일이 인식되지 않는 경우</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EB%AC%B8%EC%A0%9C-2-%EC%9E%98%EB%AA%BB%EB%90%9C-%ED%83%80%EC%9E%85-%EC%A0%95%EC%9D%98%EB%A1%9C-%EC%9D%B8%ED%95%9C-%EC%98%A4%EB%A5%98"><span class="toc-text">문제 2: 잘못된 타입 정의로 인한 오류</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EB%AC%B8%EC%A0%9C-3-%EC%99%B8%EB%B6%80-%EB%AA%A8%EB%93%88%EC%9D%98-%ED%83%80%EC%9E%85-%EC%84%A0%EC%96%B8"><span class="toc-text">문제 3: 외부 모듈의 타입 선언</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%EC%8B%A4%EC%8A%B5-%EC%98%88%EC%A0%9C"><span class="toc-text">실습 예제</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B5%AC%EC%A1%B0"><span class="toc-text">프로젝트 구조</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%ED%8C%8C%EC%9D%BC-%EB%82%B4%EC%9A%A9"><span class="toc-text">파일 내용</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#TypeScript-%EB%B9%8C%EB%93%9C-%EC%84%A4%EC%A0%95"><span class="toc-text">TypeScript 빌드 설정</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EB%B9%8C%EB%93%9C-%EB%B0%8F-%EC%8B%A4%ED%96%89"><span class="toc-text">빌드 및 실행</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%EB%A7%88%EB%AC%B4%EB%A6%AC"><span class="toc-text">마무리</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#new-Coding-%F0%9F%93%88-%F0%9F%8F%A0-%F0%9F%9A%80-%F0%9F%92%9A-%F0%9F%8E%AE"><span class="toc-text">new Coding(📈,🏠,🚀,💚,🎮)</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%EC%95%88%EB%85%95%ED%95%98%EC%84%B8%EC%9A%94"><span class="toc-text">안녕하세요</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#JS-%EA%B8%B0%EB%B3%B8%EA%B8%B0"><span class="toc-text">JS 기본기</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#JS-%ED%95%84%EC%82%B4%EA%B8%B0"><span class="toc-text">JS 필살기</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#JS-%EB%94%94%ED%85%8C%EC%9D%BC"><span class="toc-text">JS 디테일</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#TS-%EA%B8%B0%EB%B3%B8%EA%B8%B0"><span class="toc-text">TS 기본기</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#TS-%ED%8A%B8%EB%9F%AC%EB%B8%94%EC%8A%88%ED%8C%85"><span class="toc-text">TS 트러블슈팅</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -2146,119 +2140,135 @@
     }
 </style>
 </div>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="TypeScript-타입-선언-파일-작성-시-주의사항과-문제-해결"><a href="#TypeScript-타입-선언-파일-작성-시-주의사항과-문제-해결" class="headerlink" title="TypeScript 타입 선언 파일 작성 시 주의사항과 문제 해결"></a>TypeScript 타입 선언 파일 작성 시 주의사항과 문제 해결</h1><p>안녕하세요. <strong>뉴코딩</strong>입니다!<br>이번 시간에는 TypeScript에서 타입 선언 파일을 작성할 때 주의해야 할 사항들과 발생할 수 있는 문제들을 해결하는 방법에 대해 알아보겠습니다.<br>타입 선언 파일은 외부 JavaScript 라이브러리와의 원활한 통합을 위해 필수적입니다.</p>
-<h2 id="타입-선언-파일의-개념"><a href="#타입-선언-파일의-개념" class="headerlink" title="타입 선언 파일의 개념"></a>타입 선언 파일의 개념</h2><h3 id="타입-선언-파일이란"><a href="#타입-선언-파일이란" class="headerlink" title="타입 선언 파일이란?"></a>타입 선언 파일이란?</h3><p>타입 선언 파일(<code>.d.ts</code>)은 TypeScript가 JavaScript 코드의 타입을 이해할 수 있도록 돕는 파일입니다. 주로 JavaScript 라이브러리를 TypeScript 프로젝트에서 사용할 때, 해당 라이브러리의 타입 정보를 제공하기 위해 사용됩니다.</p>
-<pre><code class="highlight typescript"><span class="comment">// example.d.ts</span>
-<span class="keyword">declare</span> <span class="variable language_">module</span> <span class="string">&quot;example&quot;</span> &#123;
-  <span class="keyword">export</span> <span class="keyword">function</span> <span class="title function_">foo</span>(<span class="params"></span>): <span class="built_in">void</span>;
-  <span class="keyword">export</span> <span class="keyword">const</span> <span class="attr">bar</span>: <span class="built_in">number</span>;
-&#125;</code></pre>
+            <h1 id="new-Coding-📈-🏠-🚀-💚-🎮"><a href="#new-Coding-📈-🏠-🚀-💚-🎮" class="headerlink" title="new Coding(📈,🏠,🚀,💚,🎮)"></a>new Coding(📈,🏠,🚀,💚,🎮)</h1><h2 id="안녕하세요"><a href="#안녕하세요" class="headerlink" title="안녕하세요"></a>안녕하세요</h2><p>📈 본업으로 블록체인을 개발하는 개발자입니다.</p>
+<p>🏠 여기는 제가 공부한 내용들을 정리하는 곳입니다.</p>
+<p>🚀 언제든 꺼내 볼 수 있도록 간결한 사전 형식으로 디자인했습니다.</p>
+<p>💚 운영자가 JS를 좋아해서 대부분 개념은 JS를 기반으로 다룹니다.</p>
+<p>🎮 각 설명의 예제는 가능하면 RPG게임 테마로 작성했습니다.</p>
+<h2 id="JS-기본기"><a href="#JS-기본기" class="headerlink" title="JS 기본기"></a>JS 기본기</h2><blockquote>
+<p>JS 기본기를 학습하기 위한 구성입니다. backend, frontend를 시작하기 위해서 필수로 알아야합니다.</p>
+</blockquote>
+<details>
+<summary>첫 글 <span>`변수와 데이터 타입`</span> 부터 공부해보세요!</summary>
 
-<h2 id="타입-선언-파일-작성-시-주의사항"><a href="#타입-선언-파일-작성-시-주의사항" class="headerlink" title="타입 선언 파일 작성 시 주의사항"></a>타입 선언 파일 작성 시 주의사항</h2><h3 id="1-정확한-타입-정의"><a href="#1-정확한-타입-정의" class="headerlink" title="1. 정확한 타입 정의"></a>1. 정확한 타입 정의</h3><p>타입 선언 파일을 작성할 때는 함수, 변수, 클래스 등의 타입을 정확하게 정의해야 합니다. 잘못된 타입 정의는 타입 체크 오류를 유발할 수 있습니다.</p>
-<pre><code class="highlight typescript"><span class="keyword">declare</span> <span class="variable language_">module</span> <span class="string">&quot;example&quot;</span> &#123;
-  <span class="keyword">export</span> <span class="keyword">function</span> <span class="title function_">foo</span>(<span class="params"><span class="attr">name</span>: <span class="built_in">string</span></span>): <span class="built_in">void</span>; <span class="comment">// 함수 인자의 타입 정의</span>
-  <span class="keyword">export</span> <span class="keyword">const</span> <span class="attr">bar</span>: <span class="built_in">number</span>;
-&#125;</code></pre>
+<ol>
+<li><a href="/javascript/basic/1">JavaScript 변수와 데이터 타입</a></li>
+<li>JavaScript 연산자와 표현식</li>
+<li>JavaScript 조건문 (if, else if, else, switch)</li>
+<li>JavaScript 반복문 (for, while, do…while)</li>
+<li>JavaScript 함수 정의 및 호출</li>
+<li>JavaScript 배열과 배열 메서드</li>
+<li>JavaScript 객체와 객체 프로퍼티</li>
+<li>JavaScript 이벤트 처리</li>
+<li>JavaScript DOM 조작</li>
+<li>JavaScript 비동기 프로그래밍 (콜백, 프로미스)</li>
+<li>JavaScript 배열 메서드 reduce, map 심화</li>
+</ol>
+</details>
 
-<h3 id="2-네임스페이스와-모듈-구분"><a href="#2-네임스페이스와-모듈-구분" class="headerlink" title="2. 네임스페이스와 모듈 구분"></a>2. 네임스페이스와 모듈 구분</h3><p>타입 선언 파일에서 네임스페이스와 모듈을 구분하여 정의해야 합니다. 네임스페이스는 전역 스코프에 영향을 미치고, 모듈은 파일 단위로 분리된 스코프를 가집니다.</p>
-<pre><code class="highlight typescript"><span class="comment">// 전역 네임스페이스</span>
-<span class="keyword">declare</span> <span class="keyword">namespace</span> <span class="title class_">ExampleNamespace</span> &#123;
-  <span class="keyword">function</span> <span class="title function_">foo</span>(<span class="params"></span>): <span class="built_in">void</span>;
-&#125;
+<h2 id="JS-필살기"><a href="#JS-필살기" class="headerlink" title="JS 필살기"></a>JS 필살기</h2><blockquote>
+<p>JS 중급 이상의 내용을 학습하기 위한 구성입니다.</p>
+</blockquote>
+<details>
+<summary>첫 글 <span>`JavaScript 이벤트 루프 이해하기`</span> 부터 공부해보세요!</summary>
 
-<span class="comment">// 모듈</span>
-<span class="keyword">declare</span> <span class="variable language_">module</span> <span class="string">&quot;example&quot;</span> &#123;
-  <span class="keyword">export</span> <span class="keyword">function</span> <span class="title function_">foo</span>(<span class="params"></span>): <span class="built_in">void</span>;
-&#125;</code></pre>
+<ol>
+<li><a href="/javascript/special/1">JavaScript 이벤트 루프 이해하기</a></li>
+<li>TypeScript로 JavaScript 코드 안전하게 작성하기</li>
+<li>JavaScript 클로저(Closures) 완벽 가이드</li>
+<li>JavaScript 프로미스 체이닝과 에러 핸들링</li>
+<li>JavaScript 모듈 시스템 이해하기 - CommonJS, AMD, 그리고 ES6 모듈</li>
+<li>함수형 프로그래밍 기법을 JavaScript에 적용하기</li>
+<li>Javascript async&#x2F;await와 Promises의 차이점</li>
+<li>JavaScript 비동기 반복(iteration) - for-await-of 루프</li>
+<li>JavaScript에서 여러 비동기 요청 한번에 처리하기</li>
+<li>JavaScript 메모리 관리와 가비지 컬렉션</li>
+<li>JavaScript 정규 표현식(Regular Expressions)</li>
+<li>JavaScript 프로토타입 상속(Prototype Inheritance)</li>
+<li>JavaScript 웹 워커(Web Workers)를 사용하여 멀티스레딩 구현하기</li>
+<li>JavaScript this의 다양한 사용 방식과 상황별 정리</li>
+<li>JavaScript require와 import의 차이</li>
+</ol>
+</details>
 
-<h3 id="3-오버로딩"><a href="#3-오버로딩" class="headerlink" title="3. 오버로딩"></a>3. 오버로딩</h3><p>오버로딩이 필요한 경우, 여러 버전의 함수를 정의하여 다양한 호출 방식을 지원할 수 있도록 합니다.</p>
-<pre><code class="highlight typescript"><span class="keyword">declare</span> <span class="variable language_">module</span> <span class="string">&quot;example&quot;</span> &#123;
-  <span class="keyword">export</span> <span class="keyword">function</span> <span class="title function_">foo</span>(<span class="params"><span class="attr">name</span>: <span class="built_in">string</span></span>): <span class="built_in">void</span>;
-  <span class="keyword">export</span> <span class="keyword">function</span> <span class="title function_">foo</span>(<span class="params"><span class="attr">name</span>: <span class="built_in">string</span>, <span class="attr">age</span>: <span class="built_in">number</span></span>): <span class="built_in">void</span>;
-&#125;</code></pre>
+<h2 id="JS-디테일"><a href="#JS-디테일" class="headerlink" title="JS 디테일"></a>JS 디테일</h2><blockquote>
+<p>현업에서 일하다보면 친한 사람한테 구두로 전승해주는 그런 내용들입니다. 몰라도 코딩하는데는 지장이 없지만, 알면 앞으로 코딩하기 편한.. 그런 문법들을 정리해놓았습니다.</p>
+</blockquote>
+<details>
+<summary>첫 글 <span>`JavaScript 비구조화 할당 (Destructuring Assignment)`</span> 부터 공부해보세요!</summary>
 
-<h2 id="문제-해결"><a href="#문제-해결" class="headerlink" title="문제 해결"></a>문제 해결</h2><h3 id="문제-1-타입-선언-파일이-인식되지-않는-경우"><a href="#문제-1-타입-선언-파일이-인식되지-않는-경우" class="headerlink" title="문제 1: 타입 선언 파일이 인식되지 않는 경우"></a>문제 1: 타입 선언 파일이 인식되지 않는 경우</h3><p>타입 선언 파일이 프로젝트에서 인식되지 않는 경우, <code>tsconfig.json</code> 파일을 확인해야 합니다. <code>include</code> 필드에 타입 선언 파일의 경로를 추가하여 TypeScript 컴파일러가 파일을 인식할 수 있도록 합니다.</p>
-<pre><code class="highlight json"><span class="punctuation">&#123;</span>
-  <span class="attr">&quot;compilerOptions&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span>
-    <span class="attr">&quot;outDir&quot;</span><span class="punctuation">:</span> <span class="string">&quot;./lib&quot;</span><span class="punctuation">,</span>
-    <span class="attr">&quot;rootDir&quot;</span><span class="punctuation">:</span> <span class="string">&quot;./src&quot;</span><span class="punctuation">,</span>
-    <span class="attr">&quot;module&quot;</span><span class="punctuation">:</span> <span class="string">&quot;commonjs&quot;</span><span class="punctuation">,</span>
-    <span class="attr">&quot;target&quot;</span><span class="punctuation">:</span> <span class="string">&quot;es6&quot;</span><span class="punctuation">,</span>
-    <span class="attr">&quot;esModuleInterop&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span>
-  <span class="punctuation">&#125;</span><span class="punctuation">,</span>
-  <span class="attr">&quot;include&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;src&quot;</span><span class="punctuation">,</span> <span class="string">&quot;typings&quot;</span><span class="punctuation">]</span>
-<span class="punctuation">&#125;</span></code></pre>
+<ol>
+<li><a href="/javascript/detail/1">Javascript 비구조화 할당 (Destructuring Assignment)</a></li>
+<li>Javascript 화살표 함수 (Arrow Functions)</li>
+<li>Javascript 템플릿 리터럴 (Template Literals)</li>
+<li>Javascript 디폴트 파라미터 (Default Parameters)</li>
+<li>Javascript 스프레드 연산자 (Spread Operator)</li>
+<li>Javascript 나머지 매개변수 (Rest Parameters)</li>
+<li>Javascript for…of 루프와 for…in 루프</li>
+<li>Javascript 객체 리터럴 확장 (Object Literal Extensions)</li>
+<li>Javascript 선택적 체이닝 (Optional Chaining)과 Null 병합 연산자 (Nullish Coalescing)</li>
+<li>Javascript 클래스 (Classes)</li>
+<li>Javascript 모듈 (Modules)</li>
+<li>Javascript Map과 Set</li>
+<li>Javascript WeakMap과 WeakSet</li>
+<li>Javascript 심볼 (Symbols)</li>
+<li>Javascript 제너레이터 (Generators)</li>
+<li>Javascript 프록시 (Proxy)</li>
+<li>Javascript Reflect API</li>
+<li>Javascript 커링 (Currying)</li>
+<li>Javascript 고차 함수(Higher-Order Functions)</li>
+<li>Javascript 데코레이터(Decorators)</li>
+<li>Javascript 함수 합성(Composition)</li>
+<li>Javascript 타입 검사(Type Checking)</li>
+<li>Javascript 프로미스 체이닝(Promise Chaining)</li>
+</ol>
+</details>
 
-<h3 id="문제-2-잘못된-타입-정의로-인한-오류"><a href="#문제-2-잘못된-타입-정의로-인한-오류" class="headerlink" title="문제 2: 잘못된 타입 정의로 인한 오류"></a>문제 2: 잘못된 타입 정의로 인한 오류</h3><p>잘못된 타입 정의는 타입 체크 오류를 유발할 수 있습니다. 이를 해결하기 위해 타입을 정확하게 정의하고, 필요한 경우 <code>any</code> 타입을 사용하여 임시로 문제를 해결할 수 있습니다.</p>
-<pre><code class="highlight typescript"><span class="comment">// 잘못된 타입 정의</span>
-<span class="keyword">declare</span> <span class="variable language_">module</span> <span class="string">&quot;example&quot;</span> &#123;
-  <span class="keyword">export</span> <span class="keyword">function</span> <span class="title function_">foo</span>(<span class="params"><span class="attr">name</span>: <span class="built_in">number</span></span>): <span class="built_in">void</span>;
-&#125;
+<h2 id="TS-기본기"><a href="#TS-기본기" class="headerlink" title="TS 기본기"></a>TS 기본기</h2><blockquote>
+<p>TypeScript는 enterprise급 백엔드나 프론트를 만들 때 필수죠..</p>
+</blockquote>
+<details>
+<summary>첫 글 <span>`TypeScript 설치 및 설정`</span> 부터 공부해보세요!</summary>
 
-<span class="comment">// 수정된 타입 정의</span>
-<span class="keyword">declare</span> <span class="variable language_">module</span> <span class="string">&quot;example&quot;</span> &#123;
-  <span class="keyword">export</span> <span class="keyword">function</span> <span class="title function_">foo</span>(<span class="params"><span class="attr">name</span>: <span class="built_in">string</span></span>): <span class="built_in">void</span>;
-&#125;</code></pre>
+<ol>
+<li><a href="/typescript/basic/1/">TypeScript 설치 및 설정</a></li>
+<li>TypesScript 타입 시스템 이해하기</li>
+<li>TypeScript 인터페이스와 타입 별칭 사용법</li>
+<li>TypeScript 제네릭(Generic) 사용법</li>
+<li>TypeScript 열거형(Enum) 활용법</li>
+<li>TypeScript 유니언 타입과 인터섹션 타입</li>
+<li>TypeScript 타입 가드와 타입 좁히기</li>
+<li>TypeScript 타입 선언 파일 작성 및 사용</li>
+<li>TypeScript 비동기 처리 (async&#x2F;await)와 Promise 타입</li>
+<li>TypeScript 클래스와 인터페이스</li>
+<li>TypeScript에서 함수형 프로그래밍</li>
+</ol>
+</details>
 
-<h3 id="문제-3-외부-모듈의-타입-선언"><a href="#문제-3-외부-모듈의-타입-선언" class="headerlink" title="문제 3: 외부 모듈의 타입 선언"></a>문제 3: 외부 모듈의 타입 선언</h3><p>외부 모듈의 타입 선언이 제공되지 않는 경우, 직접 타입 선언 파일을 작성하거나 <code>@types</code> 패키지를 설치하여 해결할 수 있습니다.</p>
-<pre><code class="highlight bash">npm install @types/example</code></pre>
+<h2 id="TS-트러블슈팅"><a href="#TS-트러블슈팅" class="headerlink" title="TS 트러블슈팅"></a>TS 트러블슈팅</h2><blockquote>
+<p>교과서적인 트러블슈팅 내용과 제가 실제 겪은 상황을 복기하여 구성해보았습니다.</p>
+</blockquote>
+<details>
+<summary>첫 글 <span>`TypeScript 타입 정의와 타입 충돌 문제 해결`</span> 부터 공부해보세요!</summary>
 
-<h2 id="실습-예제"><a href="#실습-예제" class="headerlink" title="실습 예제"></a>실습 예제</h2><h3 id="프로젝트-구조"><a href="#프로젝트-구조" class="headerlink" title="프로젝트 구조"></a>프로젝트 구조</h3><p>다음과 같은 프로젝트 구조를 가정합니다:</p>
-<pre><code class="highlight bash">src/
-├── index.ts
-typings/
-└── example.d.ts</code></pre>
+<ol>
+<li><a href="/typescript/troubleshooting/1/">TypeScript 타입 정의와 타입 충돌 문제 해결</a></li>
+<li>TypeScript 제네릭 사용 시 타입 추론 문제 해결</li>
+<li>TypeScript 타입 선언 파일 작성 시 주의사항과 문제 해결</li>
+<li>TypeScript 모듈 해석 순서와 트리 쉐이킹 문제 해결</li>
+<li>TypeScript 타입 시스템의 한계와 이를 우회하는 방법</li>
+<li>TypeScript 클래스 상속과 다형성 문제 해결</li>
+<li>TypeScript 데코레이터 사용 시 발생하는 문제 해결</li>
+<li>TypeScript Third-Party 라이브러리 타입 정의 문제 해결</li>
+<li>TypeScript와 Babel 통합 시 발생하는 문제 해결</li>
+<li>TypeScript 순환참조 문제 해결</li>
+<li>TypeScript 모듈 빌드 순서와 중복 함수 참조 문제 해결</li>
+<li>TypeScript 타입 선언 파일(.d.ts) 오류 해결</li>
+</ol>
+</details>
 
-<h3 id="파일-내용"><a href="#파일-내용" class="headerlink" title="파일 내용"></a>파일 내용</h3><p><strong>typings&#x2F;example.d.ts</strong></p>
-<pre><code class="highlight typescript"><span class="keyword">declare</span> <span class="variable language_">module</span> <span class="string">&quot;example&quot;</span> &#123;
-  <span class="keyword">export</span> <span class="keyword">function</span> <span class="title function_">foo</span>(<span class="params"><span class="attr">name</span>: <span class="built_in">string</span></span>): <span class="built_in">void</span>;
-  <span class="keyword">export</span> <span class="keyword">const</span> <span class="attr">bar</span>: <span class="built_in">number</span>;
-&#125;</code></pre>
-
-<p><strong>src&#x2F;index.ts</strong></p>
-<pre><code class="highlight typescript"><span class="keyword">import</span> &#123; foo, bar &#125; <span class="keyword">from</span> <span class="string">&quot;example&quot;</span>;
-
-<span class="title function_">foo</span>(<span class="string">&quot;TypeScript&quot;</span>);
-<span class="variable language_">console</span>.<span class="title function_">log</span>(bar);</code></pre>
-
-<h3 id="TypeScript-빌드-설정"><a href="#TypeScript-빌드-설정" class="headerlink" title="TypeScript 빌드 설정"></a>TypeScript 빌드 설정</h3><p><code>tsconfig.json</code> 파일을 설정합니다.</p>
-<pre><code class="highlight json"><span class="punctuation">&#123;</span>
-  <span class="attr">&quot;compilerOptions&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span>
-    <span class="attr">&quot;outDir&quot;</span><span class="punctuation">:</span> <span class="string">&quot;./lib&quot;</span><span class="punctuation">,</span>
-    <span class="attr">&quot;rootDir&quot;</span><span class="punctuation">:</span> <span class="string">&quot;./src&quot;</span><span class="punctuation">,</span>
-    <span class="attr">&quot;module&quot;</span><span class="punctuation">:</span> <span class="string">&quot;commonjs&quot;</span><span class="punctuation">,</span>
-    <span class="attr">&quot;target&quot;</span><span class="punctuation">:</span> <span class="string">&quot;es6&quot;</span><span class="punctuation">,</span>
-    <span class="attr">&quot;esModuleInterop&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span>
-  <span class="punctuation">&#125;</span><span class="punctuation">,</span>
-  <span class="attr">&quot;include&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;src&quot;</span><span class="punctuation">,</span> <span class="string">&quot;typings&quot;</span><span class="punctuation">]</span>
-<span class="punctuation">&#125;</span></code></pre>
-
-<h3 id="빌드-및-실행"><a href="#빌드-및-실행" class="headerlink" title="빌드 및 실행"></a>빌드 및 실행</h3><p>다음 명령어를 사용하여 빌드를 실행하고 결과를 확인합니다:</p>
-<pre><code class="highlight bash">npm run build
-node lib/index.js</code></pre>
-
-<h2 id="마무리"><a href="#마무리" class="headerlink" title="마무리"></a>마무리</h2><p>이번 시간에는 TypeScript에서 타입 선언 파일을 작성할 때 주의해야 할 사항들과 발생할 수 있는 문제들을 해결하는 방법에 대해 알아보았습니다. 이를 통해 외부 라이브러리와의 통합을 원활하게 하고, 타입 안전성을 유지할 수 있습니다.</p>
-<p>감사합니다!</p>
-
-      
-       <hr><span style="font-style: italic;color: gray;"> 퍼가실 때는 출처를 밝혀 주세요~ </span>
-    </div>
-</article>
-
-
-
-
-
-
-
-    
-
-
-
-
+        </article>
+        
     </div>
     <div class="copyright">
         <p class="footer-entry">
@@ -2266,11 +2276,11 @@ node lib/index.js</code></pre>
 </p>
 
     </div>
-    <div class="full-toc">
-        <button class="full" data-title="전체 화면 단축키 s"><span class="min "></span></button>
+</div>
+<div class="full-toc">
+    <button class="full" data-title="전체 화면 단축키 s"><span class="min "></span></button>
 <a class="" id="rocket" ></a>
 
-    </div>
 </div>
 </body>
 <script src="/js/jquery.pjax.js?v=1.1.0" ></script>
