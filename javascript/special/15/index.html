@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>JavaScript require와 import의 차이 | NewCoding</title>
-  <meta name="keywords" content="JavaScript require와 import의 차이">
-  <meta name="description" content="JavaScript require와 import의 차이  이번 시간에는 Node.js와 ES6 모듈 시스템에서 사용하는 require와 import의 차이에 대해 알아보겠습니다. 이 두 가지 모듈 시스템은 JavaScript에서 외부 모듈을 불러오는 방법을 제공하지만,">
+  <title>JavaScript require와 import의 차이 및 혼용 사용법 | NewCoding</title>
+  <meta name="keywords" content="JavaScript require와 import의 차이 및 혼용 사용법">
+  <meta name="description" content="JavaScript require와 import의 차이 및 혼용 사용법  이번 시간에는 Node.js와 ES6 모듈 시스템에서 사용하는 require와 import의 차이, 혼용 사용 시 발생할 수 있는 이슈와 그 해결 방법에 대해 알아보겠습니다. 이 두 가지 모듈 시">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
@@ -33,8 +33,8 @@
 <script src="/js/iconfont.js?v=1.1.0" ></script>
 
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7106090514202944" crossorigin="anonymous"></script>
-	<meta property="og:title" content="JavaScript require와 import의 차이">
-	<meta property="og:description" content="JavaScript require와 import의 차이  이번 시간에는 Node.js와 ES6 모듈 시스템에서 사용하는 require와 import의 차이에 대해 알아보겠습니다. 이 두 가지 모듈 시스템은 JavaScript에서 외부 모듈을 불러오는 방법을 제공하지만,">
+	<meta property="og:title" content="JavaScript require와 import의 차이 및 혼용 사용법">
+	<meta property="og:description" content="JavaScript require와 import의 차이 및 혼용 사용법  이번 시간에는 Node.js와 ES6 모듈 시스템에서 사용하는 require와 import의 차이, 혼용 사용 시 발생할 수 있는 이슈와 그 해결 방법에 대해 알아보겠습니다. 이 두 가지 모듈 시">
 	<meta property="og:type" content="article">
 	<meta property="og:url" content="https://www.newcoding.co.kr/javascript/special/15/">
 	<meta property="og:image" content="/img/fav2.png">
@@ -470,7 +470,7 @@
            href="/javascript/special/15/"
            data-tag=""
            data-author="" >
-            <span class="post-title" title="JavaScript require와 import의 차이">JavaScript require와 import의 차이</span>
+            <span class="post-title" title="JavaScript require와 import의 차이 및 혼용 사용법">JavaScript require와 import의 차이 및 혼용 사용법</span>
             <span class="post-date" title="2024-05-16 00:00:00">2024/05/16</span>
         </a>
         
@@ -2330,7 +2330,7 @@
     <div class="pjax">
         <article id="post-javascript/special/15" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">JavaScript require와 import의 차이</h1>
+        <h1 class="article-title">JavaScript require와 import의 차이 및 혼용 사용법</h1>
     
     <div class="article-meta">
         
@@ -2351,7 +2351,7 @@
     </div>
     <div class="article-meta">
         
-            작성일 : <time class="date" title='업데이트 일자: 2024-08-08'>2024-05-16</time>
+            작성일 : <time class="date" title='업데이트 일자: 2024-08-23'>2024-05-16</time>
         
     </div>
     <div class="article-meta">
@@ -2373,7 +2373,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#JavaScript-require%EC%99%80-import%EC%9D%98-%EC%B0%A8%EC%9D%B4"><span class="toc-text">JavaScript require와 import의 차이</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%EA%B0%9C%EC%9A%94"><span class="toc-text">개요</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%EB%AA%A8%EB%93%88-%EC%8B%9C%EC%8A%A4%ED%85%9C%EC%9D%B4%EB%9E%80"><span class="toc-text">모듈 시스템이란?</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#CommonJS-require"><span class="toc-text">CommonJS (require)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ES6-%EB%AA%A8%EB%93%88-import"><span class="toc-text">ES6 모듈 (import)</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#require%EC%99%80-import%EC%9D%98-%EC%B0%A8%EC%9D%B4"><span class="toc-text">require와 import의 차이</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%EA%B5%AC%EB%AC%B8"><span class="toc-text">1. 구문</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%EB%AA%A8%EB%93%88-%EB%A1%9C%EB%94%A9-%EC%8B%9C%EC%A0%90"><span class="toc-text">2. 모듈 로딩 시점</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%EB%AA%A8%EB%93%88-%EB%82%B4%EB%B3%B4%EB%82%B4%EA%B8%B0"><span class="toc-text">3. 모듈 내보내기</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%EB%AA%A8%EB%93%88-%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0"><span class="toc-text">4. 모듈 가져오기</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-%ED%98%BC%EC%9A%A9-%EC%82%AC%EC%9A%A9"><span class="toc-text">5. 혼용 사용</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%EC%98%88%EC%A0%9C-RPG-%EA%B2%8C%EC%9E%84"><span class="toc-text">예제: RPG 게임</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#CommonJS-require-%EC%98%88%EC%A0%9C"><span class="toc-text">CommonJS (require) 예제</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ES6-%EB%AA%A8%EB%93%88-import-%EC%98%88%EC%A0%9C"><span class="toc-text">ES6 모듈 (import) 예제</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%EB%A7%88%EB%AC%B4%EB%A6%AC"><span class="toc-text">마무리</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#JavaScript-require%EC%99%80-import%EC%9D%98-%EC%B0%A8%EC%9D%B4-%EB%B0%8F-%ED%98%BC%EC%9A%A9-%EC%82%AC%EC%9A%A9%EB%B2%95"><span class="toc-text">JavaScript require와 import의 차이 및 혼용 사용법</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%EA%B0%9C%EC%9A%94"><span class="toc-text">1. 개요</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%EB%AA%A8%EB%93%88-%EC%8B%9C%EC%8A%A4%ED%85%9C%EC%9D%B4%EB%9E%80"><span class="toc-text">모듈 시스템이란?</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#CommonJS-require"><span class="toc-text">CommonJS (require)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ES6-%EB%AA%A8%EB%93%88-import"><span class="toc-text">ES6 모듈 (import)</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-require%EC%99%80-import%EC%9D%98-%EC%B0%A8%EC%9D%B4%EC%A0%90"><span class="toc-text">2. require와 import의 차이점</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%EA%B5%AC%EB%AC%B8"><span class="toc-text">1. 구문</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%EB%AA%A8%EB%93%88-%EB%A1%9C%EB%94%A9-%EC%8B%9C%EC%A0%90"><span class="toc-text">2. 모듈 로딩 시점</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%EB%AA%A8%EB%93%88-%EB%82%B4%EB%B3%B4%EB%82%B4%EA%B8%B0"><span class="toc-text">3. 모듈 내보내기</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%EB%AA%A8%EB%93%88-%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0"><span class="toc-text">4. 모듈 가져오기</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-%EB%AA%A8%EB%93%88-%EC%BA%90%EC%8B%B1"><span class="toc-text">5. 모듈 캐싱</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%ED%98%BC%EC%9A%A9-%EC%82%AC%EC%9A%A9%EA%B3%BC-%EA%B4%80%EB%A0%A8%EB%90%9C-%EC%9D%B4%EC%8A%88%EB%93%A4"><span class="toc-text">3. 혼용 사용과 관련된 이슈들</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#CommonJS%EC%97%90%EC%84%9C-ES6-%EB%AA%A8%EB%93%88-%EC%82%AC%EC%9A%A9"><span class="toc-text">CommonJS에서 ES6 모듈 사용</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ES6-%EB%AA%A8%EB%93%88%EC%97%90%EC%84%9C-CommonJS-%EB%AA%A8%EB%93%88-%EC%82%AC%EC%9A%A9"><span class="toc-text">ES6 모듈에서 CommonJS 모듈 사용</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Babel%EC%9D%84-%ED%86%B5%ED%95%9C-%ED%98%BC%EC%9A%A9-%EC%82%AC%EC%9A%A9"><span class="toc-text">Babel을 통한 혼용 사용</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%EC%8B%A4%EC%A0%84-%EC%98%88%EC%A0%9C-RPG-%EA%B2%8C%EC%9E%84"><span class="toc-text">4. 실전 예제: RPG 게임</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#CommonJS-%EC%98%88%EC%A0%9C"><span class="toc-text">CommonJS 예제</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ES6-%EB%AA%A8%EB%93%88-%EC%98%88%EC%A0%9C"><span class="toc-text">ES6 모듈 예제</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%ED%98%BC%EC%9A%A9-%EC%98%88%EC%A0%9C"><span class="toc-text">혼용 예제</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-%EB%A7%88%EB%AC%B4%EB%A6%AC"><span class="toc-text">5. 마무리</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -2389,59 +2389,74 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="JavaScript-require와-import의-차이"><a href="#JavaScript-require와-import의-차이" class="headerlink" title="JavaScript require와 import의 차이"></a>JavaScript require와 import의 차이</h1><p>안녕하세요. <strong>뉴코딩</strong>입니다!<br>이번 시간에는 Node.js와 ES6 모듈 시스템에서 사용하는 <code>require</code>와 <code>import</code>의 차이에 대해 알아보겠습니다.<br>이 두 가지 모듈 시스템은 JavaScript에서 외부 모듈을 불러오는 방법을 제공하지만, 각각의 사용법과 동작 방식에 차이가 있습니다. RPG 게임을 소재로 예제를 통해 자세히 살펴보겠습니다.</p>
-<h2 id="개요"><a href="#개요" class="headerlink" title="개요"></a>개요</h2><h3 id="모듈-시스템이란"><a href="#모듈-시스템이란" class="headerlink" title="모듈 시스템이란?"></a>모듈 시스템이란?</h3><p>모듈 시스템은 코드의 재사용성과 유지보수성을 높이기 위해 코드를 여러 파일로 분리하고, 필요한 파일에서 해당 모듈을 불러오는 방식을 의미합니다. JavaScript에는 CommonJS와 ES6 모듈 시스템이 있습니다.</p>
-<h3 id="CommonJS-require"><a href="#CommonJS-require" class="headerlink" title="CommonJS (require)"></a>CommonJS (require)</h3><p>CommonJS는 Node.js에서 주로 사용하는 모듈 시스템으로, <code>require</code> 키워드를 사용하여 모듈을 불러옵니다. CommonJS는 동기적으로 모듈을 로드합니다.</p>
-<h3 id="ES6-모듈-import"><a href="#ES6-모듈-import" class="headerlink" title="ES6 모듈 (import)"></a>ES6 모듈 (import)</h3><p>ES6 모듈 시스템은 ECMAScript 2015(ES6)에서 도입된 표준 모듈 시스템으로, <code>import</code> 키워드를 사용하여 모듈을 불러옵니다. ES6 모듈은 비동기적으로 모듈을 로드하며, 정적 분석이 가능합니다.</p>
-<h2 id="require와-import의-차이"><a href="#require와-import의-차이" class="headerlink" title="require와 import의 차이"></a>require와 import의 차이</h2><h3 id="1-구문"><a href="#1-구문" class="headerlink" title="1. 구문"></a>1. 구문</h3><ul>
-<li><p><strong>CommonJS (require)</strong></p>
+        <h1 id="JavaScript-require와-import의-차이-및-혼용-사용법"><a href="#JavaScript-require와-import의-차이-및-혼용-사용법" class="headerlink" title="JavaScript require와 import의 차이 및 혼용 사용법"></a>JavaScript <code>require</code>와 <code>import</code>의 차이 및 혼용 사용법</h1><p>안녕하세요. <strong>뉴코딩</strong>입니다!<br>이번 시간에는 Node.js와 ES6 모듈 시스템에서 사용하는 <code>require</code>와 <code>import</code>의 차이, 혼용 사용 시 발생할 수 있는 이슈와 그 해결 방법에 대해 알아보겠습니다.<br>이 두 가지 모듈 시스템은 JavaScript에서 외부 모듈을 불러오는 방법을 제공하지만, 각각의 사용법과 동작 방식에 차이가 있습니다. 예제를 통해 구체적으로 살펴보겠습니다.</p>
+<h2 id="1-개요"><a href="#1-개요" class="headerlink" title="1. 개요"></a>1. 개요</h2><h3 id="모듈-시스템이란"><a href="#모듈-시스템이란" class="headerlink" title="모듈 시스템이란?"></a>모듈 시스템이란?</h3><p>모듈 시스템은 코드의 재사용성과 유지보수성을 높이기 위해 코드를 여러 파일로 분리하고, 필요한 파일에서 해당 모듈을 불러오는 방식을 의미합니다. JavaScript에는 두 가지 주요 모듈 시스템이 있습니다:</p>
+<ul>
+<li><strong>CommonJS</strong>: Node.js에서 주로 사용하는 모듈 시스템으로, <code>require</code>를 통해 모듈을 동기적으로 불러옵니다.</li>
+<li><strong>ES6 모듈</strong>: ES6(ECMAScript 2015)에서 도입된 표준 모듈 시스템으로, <code>import</code>를 통해 모듈을 비동기적으로 불러옵니다.</li>
+</ul>
+<h3 id="CommonJS-require"><a href="#CommonJS-require" class="headerlink" title="CommonJS (require)"></a>CommonJS (<code>require</code>)</h3><p>CommonJS 모듈 시스템은 Node.js의 기본 모듈 시스템으로, 서버 사이드 JavaScript에서 주로 사용됩니다. CommonJS는 <code>require</code> 키워드를 사용하여 모듈을 동기적으로 불러오며, 파일이 실행되는 시점에 모듈이 로드됩니다. 이는 Node.js의 모든 모듈이 동기적으로 로드된다는 의미입니다.</p>
+<h3 id="ES6-모듈-import"><a href="#ES6-모듈-import" class="headerlink" title="ES6 모듈 (import)"></a>ES6 모듈 (<code>import</code>)</h3><p>ES6 모듈 시스템은 JavaScript의 표준 모듈 시스템으로, <code>import</code> 키워드를 사용하여 모듈을 비동기적으로 불러옵니다. <code>import</code>는 정적 분석이 가능하며, 이는 컴파일 타임에 모듈의 종속성을 파악할 수 있다는 의미입니다. ES6 모듈 시스템은 브라우저 환경과 Node.js 환경 모두에서 사용될 수 있습니다.</p>
+<h2 id="2-require와-import의-차이점"><a href="#2-require와-import의-차이점" class="headerlink" title="2. require와 import의 차이점"></a>2. <code>require</code>와 <code>import</code>의 차이점</h2><h3 id="1-구문"><a href="#1-구문" class="headerlink" title="1. 구문"></a>1. 구문</h3><p><strong>CommonJS (require):</strong></p>
 <pre><code class="highlight javascript"><span class="keyword">const</span> <span class="variable language_">module</span> = <span class="built_in">require</span>(<span class="string">&quot;./module&quot;</span>);</code></pre>
-</li>
-<li><p><strong>ES6 모듈 (import)</strong></p>
-<pre><code class="highlight javascript"><span class="keyword">import</span> <span class="variable language_">module</span> <span class="keyword">from</span> <span class="string">&quot;./module&quot;</span>;</code></pre></li>
-</ul>
+
+<p><strong>ES6 모듈 (import):</strong></p>
+<pre><code class="highlight javascript"><span class="keyword">import</span> <span class="variable language_">module</span> <span class="keyword">from</span> <span class="string">&quot;./module&quot;</span>;</code></pre>
+
+<p>구문에서 볼 수 있듯이, <code>require</code>는 함수처럼 사용되며, 모듈의 경로를 인자로 받습니다. 반면 <code>import</code>는 JavaScript의 문법적인 구문으로, 별도의 함수 호출 없이 모듈을 불러옵니다.</p>
 <h3 id="2-모듈-로딩-시점"><a href="#2-모듈-로딩-시점" class="headerlink" title="2. 모듈 로딩 시점"></a>2. 모듈 로딩 시점</h3><ul>
-<li><strong>require</strong>: 런타임에 동기적으로 모듈을 로드합니다.</li>
-<li><strong>import</strong>: 정적 분석 단계에서 비동기적으로 모듈을 로드합니다.</li>
+<li><strong><code>require</code></strong>: 런타임에 동기적으로 모듈을 로드합니다. 코드가 실행되는 동안 <code>require</code>를 만나면, 해당 모듈이 즉시 로드되고 실행됩니다.</li>
+<li><strong><code>import</code></strong>: 정적 분석 단계에서 모듈을 비동기적으로 로드합니다. ES6 모듈 시스템은 브라우저나 Node.js가 스크립트를 처음 로드할 때부터 모듈을 로드하고 분석합니다.</li>
 </ul>
-<h3 id="3-모듈-내보내기"><a href="#3-모듈-내보내기" class="headerlink" title="3. 모듈 내보내기"></a>3. 모듈 내보내기</h3><ul>
-<li><p><strong>CommonJS (module.exports)</strong></p>
+<h3 id="3-모듈-내보내기"><a href="#3-모듈-내보내기" class="headerlink" title="3. 모듈 내보내기"></a>3. 모듈 내보내기</h3><p><strong>CommonJS (module.exports):</strong></p>
 <pre><code class="highlight javascript"><span class="comment">// module.js</span>
 <span class="variable language_">module</span>.<span class="property">exports</span> = &#123;
   <span class="attr">greet</span>: <span class="keyword">function</span> (<span class="params"></span>) &#123;
     <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;Hello from CommonJS&quot;</span>);
   &#125;,
 &#125;;</code></pre>
-</li>
-<li><p><strong>ES6 모듈 (export default)</strong></p>
+
+<p><strong>ES6 모듈 (export default):</strong></p>
 <pre><code class="highlight javascript"><span class="comment">// module.js</span>
 <span class="keyword">export</span> <span class="keyword">default</span> &#123;
   <span class="attr">greet</span>: <span class="keyword">function</span> (<span class="params"></span>) &#123;
     <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;Hello from ES6 module&quot;</span>);
   &#125;,
-&#125;;</code></pre></li>
-</ul>
-<h3 id="4-모듈-가져오기"><a href="#4-모듈-가져오기" class="headerlink" title="4. 모듈 가져오기"></a>4. 모듈 가져오기</h3><ul>
-<li><p><strong>CommonJS (require)</strong></p>
+&#125;;</code></pre>
+
+<p>CommonJS에서는 <code>module.exports</code> 객체를 통해 모듈을 내보내며, 이는 파일 전체에서 단일 객체를 반환합니다. ES6 모듈 시스템에서는 <code>export default</code> 또는 <code>named export</code>를 통해 모듈을 내보낼 수 있습니다.</p>
+<h3 id="4-모듈-가져오기"><a href="#4-모듈-가져오기" class="headerlink" title="4. 모듈 가져오기"></a>4. 모듈 가져오기</h3><p><strong>CommonJS (require):</strong></p>
 <pre><code class="highlight javascript"><span class="keyword">const</span> myModule = <span class="built_in">require</span>(<span class="string">&quot;./module&quot;</span>);
 myModule.<span class="title function_">greet</span>(); <span class="comment">// Hello from CommonJS</span></code></pre>
-</li>
-<li><p><strong>ES6 모듈 (import)</strong></p>
+
+<p><strong>ES6 모듈 (import):</strong></p>
 <pre><code class="highlight javascript"><span class="keyword">import</span> myModule <span class="keyword">from</span> <span class="string">&quot;./module&quot;</span>;
-myModule.<span class="title function_">greet</span>(); <span class="comment">// Hello from ES6 module</span></code></pre></li>
-</ul>
-<h3 id="5-혼용-사용"><a href="#5-혼용-사용" class="headerlink" title="5. 혼용 사용"></a>5. 혼용 사용</h3><p>Node.js에서는 ES6 모듈을 사용하려면 Babel 또는 최신 Node.js 버전을 사용해야 합니다. ES6 모듈과 CommonJS 모듈을 혼용해서 사용할 수 있지만, 몇 가지 주의사항이 있습니다.</p>
-<ul>
-<li><p><strong>CommonJS에서 ES6 모듈 사용</strong></p>
-<pre><code class="highlight javascript"><span class="keyword">const</span> myModule = <span class="built_in">require</span>(<span class="string">&quot;./module&quot;</span>).<span class="property">default</span>;
 myModule.<span class="title function_">greet</span>(); <span class="comment">// Hello from ES6 module</span></code></pre>
-</li>
-<li><p><strong>ES6 모듈에서 CommonJS 사용</strong></p>
-<pre><code class="highlight javascript"><span class="keyword">import</span> myModule <span class="keyword">from</span> <span class="string">&quot;./module&quot;</span>;
-myModule.<span class="title function_">greet</span>(); <span class="comment">// Hello from CommonJS</span></code></pre></li>
-</ul>
-<h2 id="예제-RPG-게임"><a href="#예제-RPG-게임" class="headerlink" title="예제: RPG 게임"></a>예제: RPG 게임</h2><p>RPG 게임을 예제로 <code>require</code>와 <code>import</code>를 사용해 보겠습니다. 예제에서는 전사(Warrior)와 마법사(Mage) 클래스 모듈을 정의하고, 이를 불러와서 사용하는 방법을 보여줍니다.</p>
-<h3 id="CommonJS-require-예제"><a href="#CommonJS-require-예제" class="headerlink" title="CommonJS (require) 예제"></a>CommonJS (require) 예제</h3><p><strong>warrior.js</strong></p>
+
+<p><code>require</code>는 CommonJS 모듈 전체를 가져오며, 이는 동기적으로 실행됩니다. <code>import</code>는 모듈의 특정 부분이나 전체를 가져올 수 있으며, 비동기적으로 실행됩니다.</p>
+<h3 id="5-모듈-캐싱"><a href="#5-모듈-캐싱" class="headerlink" title="5. 모듈 캐싱"></a>5. 모듈 캐싱</h3><p>CommonJS 모듈은 한 번 로드되면 캐싱됩니다. 즉, 동일한 모듈을 여러 번 <code>require</code>해도 처음 로드된 모듈이 캐싱되어 재사용됩니다. 이 때문에 모듈 간의 상태 공유가 발생할 수 있습니다.</p>
+<p>ES6 모듈 역시 캐싱되지만, 모듈이 처음 로드될 때까지 비동기적으로 대기합니다. 이로 인해 초기 로드 시점에 차이가 발생할 수 있습니다.</p>
+<h2 id="3-혼용-사용과-관련된-이슈들"><a href="#3-혼용-사용과-관련된-이슈들" class="headerlink" title="3. 혼용 사용과 관련된 이슈들"></a>3. 혼용 사용과 관련된 이슈들</h2><h3 id="CommonJS에서-ES6-모듈-사용"><a href="#CommonJS에서-ES6-모듈-사용" class="headerlink" title="CommonJS에서 ES6 모듈 사용"></a>CommonJS에서 ES6 모듈 사용</h3><p>Node.js에서는 ES6 모듈을 사용하기 위해 <code>import</code>를 사용할 수 있지만, 몇 가지 제약이 있습니다. Node.js에서 ES6 모듈을 사용하려면 <code>.mjs</code> 확장자를 사용하거나, <code>package.json</code> 파일에 <code>&quot;type&quot;: &quot;module&quot;</code>을 추가해야 합니다. 또한, CommonJS 모듈에서 ES6 모듈을 가져올 때는 <code>.default</code>로 접근해야 합니다.</p>
+<pre><code class="highlight javascript"><span class="comment">// CommonJS</span>
+<span class="keyword">const</span> myModule = <span class="built_in">require</span>(<span class="string">&quot;./module&quot;</span>).<span class="property">default</span>;
+myModule.<span class="title function_">greet</span>(); <span class="comment">// Hello from ES6 module</span></code></pre>
+
+<h3 id="ES6-모듈에서-CommonJS-모듈-사용"><a href="#ES6-모듈에서-CommonJS-모듈-사용" class="headerlink" title="ES6 모듈에서 CommonJS 모듈 사용"></a>ES6 모듈에서 CommonJS 모듈 사용</h3><p>반대로, ES6 모듈에서 CommonJS 모듈을 가져올 때는 별도의 설정 없이 <code>import</code>를 사용할 수 있습니다. 다만, <code>module.exports</code>로 내보낸 전체 객체를 가져오게 됩니다.</p>
+<pre><code class="highlight javascript"><span class="comment">// ES6 모듈</span>
+<span class="keyword">import</span> myModule <span class="keyword">from</span> <span class="string">&quot;./module&quot;</span>;
+myModule.<span class="title function_">greet</span>(); <span class="comment">// Hello from CommonJS</span></code></pre>
+
+<h3 id="Babel을-통한-혼용-사용"><a href="#Babel을-통한-혼용-사용" class="headerlink" title="Babel을 통한 혼용 사용"></a>Babel을 통한 혼용 사용</h3><p>Babel은 최신 JavaScript 코드를 구형 브라우저나 Node.js 버전에서도 실행할 수 있도록 변환해주는 트랜스파일러입니다. Babel을 사용하면 <code>require</code>와 <code>import</code>를 혼용할 수 있으며, ES6 모듈을 CommonJS로 변환하여 호환성을 유지할 수 있습니다.</p>
+<pre><code class="highlight javascript"><span class="comment">// Babel 설정</span>
+npm install --save-dev @babel/core @babel/preset-env @babel/preset-modules
+
+<span class="comment">// .babelrc</span>
+&#123;
+  <span class="string">&quot;presets&quot;</span>: [<span class="string">&quot;@babel/preset-env&quot;</span>]
+&#125;</code></pre>
+
+<p>Babel을 사용하면 ES6 모듈 코드를 CommonJS 코드로 변환하여 Node.js에서 사용할 수 있습니다. 이 방법을 통해 <code>require</code>와 <code>import</code>를 혼용할 수 있지만, 성능과 복잡성 측면에서 주의가 필요합니다.</p>
+<h2 id="4-실전-예제-RPG-게임"><a href="#4-실전-예제-RPG-게임" class="headerlink" title="4. 실전 예제: RPG 게임"></a>4. 실전 예제: RPG 게임</h2><h3 id="CommonJS-예제"><a href="#CommonJS-예제" class="headerlink" title="CommonJS 예제"></a>CommonJS 예제</h3><p><strong>warrior.js</strong></p>
 <pre><code class="highlight javascript"><span class="comment">// warrior.js</span>
 <span class="keyword">class</span> <span class="title class_">Warrior</span> &#123;
   <span class="title function_">constructor</span>(<span class="params">name</span>) &#123;
@@ -2482,7 +2497,7 @@ myModule.<span class="title function_">greet</span>(); <span class="comment">// 
 warrior.<span class="title function_">attack</span>(); <span class="comment">// Aragon the Warrior attacks with a sword!</span>
 mage.<span class="title function_">castSpell</span>(); <span class="comment">// Gandalf the Mage casts a fireball!</span></code></pre>
 
-<h3 id="ES6-모듈-import-예제"><a href="#ES6-모듈-import-예제" class="headerlink" title="ES6 모듈 (import) 예제"></a>ES6 모듈 (import) 예제</h3><p><strong>warrior.js</strong></p>
+<h3 id="ES6-모듈-예제"><a href="#ES6-모듈-예제" class="headerlink" title="ES6 모듈 예제"></a>ES6 모듈 예제</h3><p><strong>warrior.js</strong></p>
 <pre><code class="highlight javascript"><span class="comment">// warrior.js</span>
 <span class="keyword">export</span> <span class="keyword">default</span> <span class="keyword">class</span> <span class="title class_">Warrior</span> &#123;
   <span class="title function_">constructor</span>(<span class="params">name</span>) &#123;
@@ -2519,7 +2534,19 @@ mage.<span class="title function_">castSpell</span>(); <span class="comment">// 
 warrior.<span class="title function_">attack</span>(); <span class="comment">// Aragon the Warrior attacks with a sword!</span>
 mage.<span class="title function_">castSpell</span>(); <span class="comment">// Gandalf the Mage casts a fireball!</span></code></pre>
 
-<h2 id="마무리"><a href="#마무리" class="headerlink" title="마무리"></a>마무리</h2><p>이번 시간에는 JavaScript에서 모듈을 불러오는 두 가지 방법인 <code>require</code>와 <code>import</code>의 차이에 대해 알아보았습니다. 각각의 장단점과 사용법을 이해하고, 상황에 맞게 선택하여 사용할 수 있습니다.</p>
+<h3 id="혼용-예제"><a href="#혼용-예제" class="headerlink" title="혼용 예제"></a>혼용 예제</h3><p>만약 기존에 CommonJS 모듈로 작성된 프로젝트에 새로운 ES6 모듈을 추가하고자 한다면 다음과 같은 방식으로 혼용할 수 있습니다.</p>
+<pre><code class="highlight javascript"><span class="comment">// game.js</span>
+<span class="keyword">const</span> <span class="title class_">Warrior</span> = <span class="built_in">require</span>(<span class="string">&quot;./warrior&quot;</span>).<span class="property">default</span>;
+<span class="keyword">import</span> <span class="title class_">Mage</span> <span class="keyword">from</span> <span class="string">&quot;./mage&quot;</span>;
+
+<span class="keyword">const</span> warrior = <span class="keyword">new</span> <span class="title class_">Warrior</span>(<span class="string">&quot;Aragon&quot;</span>);
+<span class="keyword">const</span> mage = <span class="keyword">new</span> <span class="title class_">Mage</span>(<span class="string">&quot;Gandalf&quot;</span>);
+
+warrior.<span class="title function_">attack</span>(); <span class="comment">// Aragon the Warrior attacks with a sword!</span>
+mage.<span class="title function_">castSpell</span>(); <span class="comment">// Gandalf the Mage casts a fireball!</span></code></pre>
+
+<p>이처럼 <code>require</code>와 <code>import</code>를 혼용할 수 있지만, 혼용 사용은 가능한 한 피하는 것이 좋습니다. 유지보수와 코드 일관성 측면에서 ES6 모듈로 일관되게 작성하는 것이 바람직합니다.</p>
+<h2 id="5-마무리"><a href="#5-마무리" class="headerlink" title="5. 마무리"></a>5. 마무리</h2><p>이번 시간에는 JavaScript에서 모듈을 불러오는 두 가지 방법인 <code>require</code>와 <code>import</code>의 차이, 각 방법의 특징, 그리고 혼용 사용 시 발생할 수 있는 이슈와 해결 방법에 대해 알아보았습니다.<br>ES6 모듈이 표준으로 자리 잡으면서, 앞으로는 <code>import</code>를 사용하는 것이 더욱 일반화될 것입니다. 그러나 기존 코드베이스와의 호환성을 유지해야 할 때는 <code>require</code>를 이해하고 적절히 사용하는 것이 중요합니다.</p>
 <p>감사합니다!</p>
 
       
