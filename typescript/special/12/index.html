@@ -2,9 +2,36 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>TypeScript 타입 매핑 (Type Mapping) | NewCoding</title>
-  <meta name="keywords" content="TypeScript 타입 매핑 (Type Mapping)">
-  <meta name="description" content="TypeScript 타입 매핑 (Type Mapping)  이번 시간에는 TypeScript에서 타입을 동적으로 생성하고 변형하는 강력한 기능인 **타입 매핑 (Type Mapping)**에 대해 알아보겠습니다. 타입 매핑은 keyof, in, Mapped Types를">
+  <title>TypeScript 타입 매핑(Type Mapping) | NewCoding</title>
+  <meta name="keywords" content="TypeScript 타입 매핑(Type Mapping)">
+<meta name="description" content="TypeScript 타입 매핑(Type Mapping) 타입 매핑은 keyof, in, Mapped Types를 사용하여 특정 타입의 모든 키를 기반으로 새로운 타입을 생성하는 방법입니다. 이와 함께 인덱스 시그니처와 Record 타입에 대해서도 알아보겠습니다. 타입 ">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+<link rel="icon" href="/img/fav2.png">
+
+<link href="/css/style.css?v=1.1.0" rel="stylesheet">
+
+<link href="/css/hl_theme/atom-dark.css?v=1.1.0" rel="stylesheet">
+
+<link href="//cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" rel="stylesheet">
+
+<script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="/js/titleTip.js?v=1.1.0" ></script>
+
+<script src="//cdn.jsdelivr.net/npm/highlightjs@9.16.2/highlight.pack.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="//cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js" ></script>
+
+<script src="/js/iconfont.js?v=1.1.0" ></script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
@@ -33,8 +60,8 @@
 <script src="/js/iconfont.js?v=1.1.0" ></script>
 
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7106090514202944" crossorigin="anonymous"></script>
-	<meta property="og:title" content="TypeScript 타입 매핑 (Type Mapping)">
-	<meta property="og:description" content="TypeScript 타입 매핑 (Type Mapping)  이번 시간에는 TypeScript에서 타입을 동적으로 생성하고 변형하는 강력한 기능인 **타입 매핑 (Type Mapping)**에 대해 알아보겠습니다. 타입 매핑은 keyof, in, Mapped Types를">
+	<meta property="og:title" content="TypeScript 타입 매핑(Type Mapping)">
+	<meta property="og:description" content="TypeScript 타입 매핑(Type Mapping) 타입 매핑은 keyof, in, Mapped Types를 사용하여 특정 타입의 모든 키를 기반으로 새로운 타입을 생성하는 방법입니다. 이와 함께 인덱스 시그니처와 Record 타입에 대해서도 알아보겠습니다. 타입 ">
 	<meta property="og:type" content="article">
 	<meta property="og:url" content="https://www.newcoding.co.kr/typescript/special/12/">
 	<meta property="og:image" content="/img/fav2.png">
@@ -114,7 +141,7 @@
     <li>
         <div class="all active" data-rel="전체">전체
             
-                <small>(221)</small>
+                <small>(228)</small>
             
         </div>
     </li>
@@ -261,7 +288,7 @@
         <div data-rel="TS_필살기">
             
             TS_필살기
-            <small>(12)</small>
+            <small>(19)</small>
         </div>
         
     </li>
@@ -387,7 +414,7 @@
         
     </div>
 </div>
-<input type="hidden" id="yelog_site_posts_number" value="221">
+<input type="hidden" id="yelog_site_posts_number" value="228">
 
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
@@ -922,12 +949,30 @@
         </a>
         
         
+        <a  class="전체 TS_필살기 "
+           href="/typescript/special/19/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="TypeScript 코드 품질 - ESLint, Prettier">TypeScript 코드 품질 - ESLint, Prettier</span>
+            <span class="post-date" title="2023-09-16 00:00:00">2023/09/16</span>
+        </a>
+        
+        
         <a  class="전체 JS_디테일 "
            href="/javascript/detail/9/"
            data-tag=""
            data-author="" >
             <span class="post-title" title="Javascript 선택적 체이닝 (Optional Chaining)과 Null 병합 연산자 (Nullish Coalescing)">Javascript 선택적 체이닝 (Optional Chaining)과 Null 병합 연산자 (Nullish Coalescing)</span>
             <span class="post-date" title="2023-09-14 00:00:00">2023/09/14</span>
+        </a>
+        
+        
+        <a  class="전체 TS_필살기 "
+           href="/typescript/special/18/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="TypeScript 비동기 프로그래밍">TypeScript 비동기 프로그래밍</span>
+            <span class="post-date" title="2023-09-12 00:00:00">2023/09/12</span>
         </a>
         
         
@@ -994,6 +1039,15 @@
         </a>
         
         
+        <a  class="전체 TS_필살기 "
+           href="/typescript/special/17/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="TypeScript 모듈 해석과 패스 매핑">TypeScript 모듈 해석과 패스 매핑</span>
+            <span class="post-date" title="2023-08-07 00:00:00">2023/08/07</span>
+        </a>
+        
+        
         <a  class="전체 TS_트러블슈팅 "
            href="/typescript/troubleshooting/3/"
            data-tag=""
@@ -1018,6 +1072,15 @@
            data-author="" >
             <span class="post-title" title="JavaScript 비동기 반복(iteration) - for-await-of 루프">JavaScript 비동기 반복(iteration) - for-await-of 루프</span>
             <span class="post-date" title="2023-07-10 00:00:00">2023/07/10</span>
+        </a>
+        
+        
+        <a  class="전체 TS_필살기 "
+           href="/typescript/special/16/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="TypeScript 메타프로그래밍">TypeScript 메타프로그래밍</span>
+            <span class="post-date" title="2023-07-08 00:00:00">2023/07/08</span>
         </a>
         
         
@@ -1120,6 +1183,15 @@
         </a>
         
         
+        <a  class="전체 TS_필살기 "
+           href="/typescript/special/15/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="TypeScript tsconfig - 프로젝트 설정 및 관리">TypeScript tsconfig - 프로젝트 설정 및 관리</span>
+            <span class="post-date" title="2023-05-29 00:00:00">2023/05/29</span>
+        </a>
+        
+        
         <a  class="전체 CLI "
            href="/cli/10/"
            data-tag=""
@@ -1153,6 +1225,15 @@
            data-author="" >
             <span class="post-title" title="Javascript 스프레드 연산자 (Spread Operator)">Javascript 스프레드 연산자 (Spread Operator)</span>
             <span class="post-date" title="2023-05-20 00:00:00">2023/05/20</span>
+        </a>
+        
+        
+        <a  class="전체 TS_필살기 "
+           href="/typescript/special/14/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="TypeScript 테스트">TypeScript 테스트</span>
+            <span class="post-date" title="2023-05-19 00:00:00">2023/05/19</span>
         </a>
         
         
@@ -1216,6 +1297,15 @@
            data-author="" >
             <span class="post-title" title="Vue Lazy Loading">Vue Lazy Loading</span>
             <span class="post-date" title="2023-04-03 00:00:00">2023/04/03</span>
+        </a>
+        
+        
+        <a  class="전체 TS_필살기 "
+           href="/typescript/special/13/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="TypeScript와 web 프레임워크">TypeScript와 web 프레임워크</span>
+            <span class="post-date" title="2023-04-02 00:00:00">2023/04/02</span>
         </a>
         
         
@@ -1511,7 +1601,7 @@
            href="/typescript/special/12/"
            data-tag=""
            data-author="" >
-            <span class="post-title" title="TypeScript 타입 매핑 (Type Mapping)">TypeScript 타입 매핑 (Type Mapping)</span>
+            <span class="post-title" title="TypeScript 타입 매핑(Type Mapping)">TypeScript 타입 매핑(Type Mapping)</span>
             <span class="post-date" title="2023-02-03 00:00:00">2023/02/03</span>
         </a>
         
@@ -1921,15 +2011,6 @@
         </a>
         
         
-        <a  class="전체 디자인패턴 "
-           href="/design-pattern/15/"
-           data-tag=""
-           data-author="" >
-            <span class="post-title" title="프록시 패턴 (Proxy Pattern)">프록시 패턴 (Proxy Pattern)</span>
-            <span class="post-date" title="2022-08-05 00:00:00">2022/08/05</span>
-        </a>
-        
-        
         <a  class="전체 etc "
            href="/emoji/discord/"
            data-tag=""
@@ -1940,11 +2021,11 @@
         
         
         <a  class="전체 디자인패턴 "
-           href="/design-pattern/14/"
+           href="/design-pattern/15/"
            data-tag=""
            data-author="" >
-            <span class="post-title" title="메멘토 패턴 (Memento Pattern)">메멘토 패턴 (Memento Pattern)</span>
-            <span class="post-date" title="2022-08-04 00:00:00">2022/08/04</span>
+            <span class="post-title" title="프록시 패턴 (Proxy Pattern)">프록시 패턴 (Proxy Pattern)</span>
+            <span class="post-date" title="2022-08-05 00:00:00">2022/08/05</span>
         </a>
         
         
@@ -1958,11 +2039,11 @@
         
         
         <a  class="전체 디자인패턴 "
-           href="/design-pattern/13/"
+           href="/design-pattern/14/"
            data-tag=""
            data-author="" >
-            <span class="post-title" title="상태 패턴 (State Pattern)">상태 패턴 (State Pattern)</span>
-            <span class="post-date" title="2022-08-03 00:00:00">2022/08/03</span>
+            <span class="post-title" title="메멘토 패턴 (Memento Pattern)">메멘토 패턴 (Memento Pattern)</span>
+            <span class="post-date" title="2022-08-04 00:00:00">2022/08/04</span>
         </a>
         
         
@@ -1976,11 +2057,11 @@
         
         
         <a  class="전체 디자인패턴 "
-           href="/design-pattern/12/"
+           href="/design-pattern/13/"
            data-tag=""
            data-author="" >
-            <span class="post-title" title="책임 연쇄 패턴 (Chain of Responsibility Pattern)">책임 연쇄 패턴 (Chain of Responsibility Pattern)</span>
-            <span class="post-date" title="2022-08-02 00:00:00">2022/08/02</span>
+            <span class="post-title" title="상태 패턴 (State Pattern)">상태 패턴 (State Pattern)</span>
+            <span class="post-date" title="2022-08-03 00:00:00">2022/08/03</span>
         </a>
         
         
@@ -1989,6 +2070,15 @@
            data-tag=""
            data-author="" >
             <span class="post-title" title="Markdown emoji 모음">Markdown emoji 모음</span>
+            <span class="post-date" title="2022-08-02 00:00:00">2022/08/02</span>
+        </a>
+        
+        
+        <a  class="전체 디자인패턴 "
+           href="/design-pattern/12/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="책임 연쇄 패턴 (Chain of Responsibility Pattern)">책임 연쇄 패턴 (Chain of Responsibility Pattern)</span>
             <span class="post-date" title="2022-08-02 00:00:00">2022/08/02</span>
         </a>
         
@@ -2002,20 +2092,20 @@
         </a>
         
         
-        <a  class="전체 디자인패턴 "
-           href="/design-pattern/11/"
-           data-tag=""
-           data-author="" >
-            <span class="post-title" title="미디에이터 패턴 (Mediator Pattern)">미디에이터 패턴 (Mediator Pattern)</span>
-            <span class="post-date" title="2022-08-01 00:00:00">2022/08/01</span>
-        </a>
-        
-        
         <a  class="전체 etc "
            href="/emoji/git/"
            data-tag=""
            data-author="" >
             <span class="post-title" title="Git emoji 모음">Git emoji 모음</span>
+            <span class="post-date" title="2022-08-01 00:00:00">2022/08/01</span>
+        </a>
+        
+        
+        <a  class="전체 디자인패턴 "
+           href="/design-pattern/11/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="미디에이터 패턴 (Mediator Pattern)">미디에이터 패턴 (Mediator Pattern)</span>
             <span class="post-date" title="2022-08-01 00:00:00">2022/08/01</span>
         </a>
         
@@ -2453,7 +2543,7 @@
     <div class="pjax">
         <article id="post-typescript/special/12" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">TypeScript 타입 매핑 (Type Mapping)</h1>
+        <h1 class="article-title">TypeScript 타입 매핑(Type Mapping)</h1>
     
     <div class="article-meta">
         
@@ -2474,7 +2564,7 @@
     </div>
     <div class="article-meta">
         
-            작성일 : <time class="date" title='업데이트 일자: 2024-08-25'>2023-02-03</time>
+            작성일 : <time class="date" title='업데이트 일자: 2024-09-01'>2023-02-03</time>
         
     </div>
     <div class="article-meta">
@@ -2496,7 +2586,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#TypeScript-%ED%83%80%EC%9E%85-%EB%A7%A4%ED%95%91-Type-Mapping"><span class="toc-text">TypeScript 타입 매핑 (Type Mapping)</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%ED%83%80%EC%9E%85-%EB%A7%A4%ED%95%91%EC%9D%98-%EA%B0%9C%EB%85%90"><span class="toc-text">타입 매핑의 개념</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%ED%83%80%EC%9E%85-%EB%A7%A4%ED%95%91%EC%9D%B4%EB%9E%80"><span class="toc-text">타입 매핑이란?</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#keyof%EC%99%80-in-%EC%97%B0%EC%82%B0%EC%9E%90"><span class="toc-text">keyof와 in 연산자</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#keyof-%EC%97%B0%EC%82%B0%EC%9E%90"><span class="toc-text">keyof 연산자</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#in-%EC%97%B0%EC%82%B0%EC%9E%90"><span class="toc-text">in 연산자</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Mapped-Types"><span class="toc-text">Mapped Types</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Mapped-Types%EC%9D%98-%EA%B0%9C%EB%85%90"><span class="toc-text">Mapped Types의 개념</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Mapped-Types%EC%9D%98-%EC%98%88%EC%8B%9C"><span class="toc-text">Mapped Types의 예시</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%EC%9D%B8%EB%8D%B1%EC%8A%A4-%EC%8B%9C%EA%B7%B8%EB%8B%88%EC%B2%98%EC%99%80-Record-%ED%83%80%EC%9E%85"><span class="toc-text">인덱스 시그니처와 Record 타입</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%EC%9D%B8%EB%8D%B1%EC%8A%A4-%EC%8B%9C%EA%B7%B8%EB%8B%88%EC%B2%98"><span class="toc-text">인덱스 시그니처</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Record-%ED%83%80%EC%9E%85"><span class="toc-text">Record 타입</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%EB%A7%88%EB%AC%B4%EB%A6%AC"><span class="toc-text">마무리</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#TypeScript-%ED%83%80%EC%9E%85-%EB%A7%A4%ED%95%91-Type-Mapping"><span class="toc-text">TypeScript 타입 매핑(Type Mapping)</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%ED%83%80%EC%9E%85-%EB%A7%A4%ED%95%91%EC%9D%98-%EA%B0%9C%EB%85%90"><span class="toc-text">타입 매핑의 개념</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%ED%83%80%EC%9E%85-%EB%A7%A4%ED%95%91%EC%9D%B4%EB%9E%80"><span class="toc-text">타입 매핑이란?</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#keyof%EC%99%80-in-%EC%97%B0%EC%82%B0%EC%9E%90"><span class="toc-text">keyof와 in 연산자</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#keyof-%EC%97%B0%EC%82%B0%EC%9E%90"><span class="toc-text">keyof 연산자</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#in-%EC%97%B0%EC%82%B0%EC%9E%90"><span class="toc-text">in 연산자</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Mapped-Types"><span class="toc-text">Mapped Types</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Mapped-Types%EC%9D%98-%EA%B0%9C%EB%85%90"><span class="toc-text">Mapped Types의 개념</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Mapped-Types%EC%9D%98-%EC%98%88%EC%8B%9C"><span class="toc-text">Mapped Types의 예시</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%EC%9D%B8%EB%8D%B1%EC%8A%A4-%EC%8B%9C%EA%B7%B8%EB%8B%88%EC%B2%98%EC%99%80-Record-%ED%83%80%EC%9E%85"><span class="toc-text">인덱스 시그니처와 Record 타입</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%EC%9D%B8%EB%8D%B1%EC%8A%A4-%EC%8B%9C%EA%B7%B8%EB%8B%88%EC%B2%98"><span class="toc-text">인덱스 시그니처</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Record-%ED%83%80%EC%9E%85"><span class="toc-text">Record 타입</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%EB%A7%88%EB%AC%B4%EB%A6%AC"><span class="toc-text">마무리</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -2512,7 +2602,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="TypeScript-타입-매핑-Type-Mapping"><a href="#TypeScript-타입-매핑-Type-Mapping" class="headerlink" title="TypeScript 타입 매핑 (Type Mapping)"></a>TypeScript 타입 매핑 (Type Mapping)</h1><p>안녕하세요. <strong>뉴코딩</strong>입니다!<br>이번 시간에는 TypeScript에서 타입을 동적으로 생성하고 변형하는 강력한 기능인 **타입 매핑 (Type Mapping)**에 대해 알아보겠습니다. 타입 매핑은 <code>keyof</code>, <code>in</code>, Mapped Types를 사용하여 특정 타입의 모든 키를 기반으로 새로운 타입을 생성하는 방법입니다. 이와 함께 인덱스 시그니처와 <code>Record</code> 타입에 대해서도 알아보겠습니다.</p>
+        <h1 id="TypeScript-타입-매핑-Type-Mapping"><a href="#TypeScript-타입-매핑-Type-Mapping" class="headerlink" title="TypeScript 타입 매핑(Type Mapping)"></a>TypeScript 타입 매핑(Type Mapping)</h1><p>안녕하세요. <strong>뉴코딩</strong>입니다!<br>이번 시간에는 TypeScript에서 타입을 동적으로 생성하고 변형하는 기능인 타입 매핑(Type Mapping)에 대해 알아보겠습니다. 타입 매핑은 <code>keyof</code>, <code>in</code>, Mapped Types를 사용하여 특정 타입의 모든 키를 기반으로 새로운 타입을 생성하는 방법입니다. 이와 함께 인덱스 시그니처와 <code>Record</code> 타입에 대해서도 알아보겠습니다.</p>
 <h2 id="타입-매핑의-개념"><a href="#타입-매핑의-개념" class="headerlink" title="타입 매핑의 개념"></a>타입 매핑의 개념</h2><h3 id="타입-매핑이란"><a href="#타입-매핑이란" class="headerlink" title="타입 매핑이란?"></a>타입 매핑이란?</h3><p>타입 매핑(Type Mapping)은 TypeScript에서 기존 타입의 키를 기반으로 새로운 타입을 동적으로 생성하는 방법입니다. 이를 통해 코드의 재사용성을 높이고, 타입을 유연하게 변형할 수 있습니다. 타입 매핑은 주로 <code>keyof</code>, <code>in</code>, Mapped Types와 함께 사용됩니다.</p>
 <h2 id="keyof와-in-연산자"><a href="#keyof와-in-연산자" class="headerlink" title="keyof와 in 연산자"></a><code>keyof</code>와 <code>in</code> 연산자</h2><h3 id="keyof-연산자"><a href="#keyof-연산자" class="headerlink" title="keyof 연산자"></a><code>keyof</code> 연산자</h3><p><code>keyof</code> 연산자는 특정 타입의 키를 유니언 타입으로 반환합니다. 예를 들어, 객체 타입의 키를 <code>keyof</code>를 사용해 추출할 수 있습니다.</p>
 <pre><code class="highlight typescript"><span class="keyword">type</span> <span class="title class_">Character</span> = &#123;

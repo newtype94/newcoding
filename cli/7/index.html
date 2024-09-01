@@ -4,7 +4,34 @@
   <meta charset="utf-8">
   <title>Node.js forever | NewCoding</title>
   <meta name="keywords" content="Node.js forever">
-  <meta name="description" content="forever: Node.js 애플리케이션의 영구 실행 도구  이번 시간에는 Node.js 애플리케이션을 영구적으로 실행해주는 도구인 forever에 대해 알아보겠습니다. forever의 역할과 필요성, 설치 방법, 기본 사용법과 고급 사용법, 그리고 실제 프로젝트에서">
+<meta name="description" content="forever: Node.js 애플리케이션의 영구 실행 도구 forever의 역할과 필요성, 설치 방법, 기본 사용법과 고급 사용법, 그리고 실제 프로젝트에서 forever를 활용하는 방법을 단계별로 설명하겠습니다. 1. forever 소개 forever란 무엇인가? ">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+<link rel="icon" href="/img/fav2.png">
+
+<link href="/css/style.css?v=1.1.0" rel="stylesheet">
+
+<link href="/css/hl_theme/atom-dark.css?v=1.1.0" rel="stylesheet">
+
+<link href="//cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" rel="stylesheet">
+
+<script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="/js/titleTip.js?v=1.1.0" ></script>
+
+<script src="//cdn.jsdelivr.net/npm/highlightjs@9.16.2/highlight.pack.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="//cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js" ></script>
+
+<script src="/js/iconfont.js?v=1.1.0" ></script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
@@ -34,7 +61,7 @@
 
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7106090514202944" crossorigin="anonymous"></script>
 	<meta property="og:title" content="Node.js forever">
-	<meta property="og:description" content="forever: Node.js 애플리케이션의 영구 실행 도구  이번 시간에는 Node.js 애플리케이션을 영구적으로 실행해주는 도구인 forever에 대해 알아보겠습니다. forever의 역할과 필요성, 설치 방법, 기본 사용법과 고급 사용법, 그리고 실제 프로젝트에서">
+	<meta property="og:description" content="forever: Node.js 애플리케이션의 영구 실행 도구 forever의 역할과 필요성, 설치 방법, 기본 사용법과 고급 사용법, 그리고 실제 프로젝트에서 forever를 활용하는 방법을 단계별로 설명하겠습니다. 1. forever 소개 forever란 무엇인가? ">
 	<meta property="og:type" content="article">
 	<meta property="og:url" content="https://www.newcoding.co.kr/cli/7/">
 	<meta property="og:image" content="/img/fav2.png">
@@ -114,7 +141,7 @@
     <li>
         <div class="all active" data-rel="전체">전체
             
-                <small>(221)</small>
+                <small>(228)</small>
             
         </div>
     </li>
@@ -261,7 +288,7 @@
         <div data-rel="TS_필살기">
             
             TS_필살기
-            <small>(12)</small>
+            <small>(19)</small>
         </div>
         
     </li>
@@ -387,7 +414,7 @@
         
     </div>
 </div>
-<input type="hidden" id="yelog_site_posts_number" value="221">
+<input type="hidden" id="yelog_site_posts_number" value="228">
 
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
@@ -922,12 +949,30 @@
         </a>
         
         
+        <a  class="전체 TS_필살기 "
+           href="/typescript/special/19/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="TypeScript 코드 품질 - ESLint, Prettier">TypeScript 코드 품질 - ESLint, Prettier</span>
+            <span class="post-date" title="2023-09-16 00:00:00">2023/09/16</span>
+        </a>
+        
+        
         <a  class="전체 JS_디테일 "
            href="/javascript/detail/9/"
            data-tag=""
            data-author="" >
             <span class="post-title" title="Javascript 선택적 체이닝 (Optional Chaining)과 Null 병합 연산자 (Nullish Coalescing)">Javascript 선택적 체이닝 (Optional Chaining)과 Null 병합 연산자 (Nullish Coalescing)</span>
             <span class="post-date" title="2023-09-14 00:00:00">2023/09/14</span>
+        </a>
+        
+        
+        <a  class="전체 TS_필살기 "
+           href="/typescript/special/18/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="TypeScript 비동기 프로그래밍">TypeScript 비동기 프로그래밍</span>
+            <span class="post-date" title="2023-09-12 00:00:00">2023/09/12</span>
         </a>
         
         
@@ -994,6 +1039,15 @@
         </a>
         
         
+        <a  class="전체 TS_필살기 "
+           href="/typescript/special/17/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="TypeScript 모듈 해석과 패스 매핑">TypeScript 모듈 해석과 패스 매핑</span>
+            <span class="post-date" title="2023-08-07 00:00:00">2023/08/07</span>
+        </a>
+        
+        
         <a  class="전체 TS_트러블슈팅 "
            href="/typescript/troubleshooting/3/"
            data-tag=""
@@ -1018,6 +1072,15 @@
            data-author="" >
             <span class="post-title" title="JavaScript 비동기 반복(iteration) - for-await-of 루프">JavaScript 비동기 반복(iteration) - for-await-of 루프</span>
             <span class="post-date" title="2023-07-10 00:00:00">2023/07/10</span>
+        </a>
+        
+        
+        <a  class="전체 TS_필살기 "
+           href="/typescript/special/16/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="TypeScript 메타프로그래밍">TypeScript 메타프로그래밍</span>
+            <span class="post-date" title="2023-07-08 00:00:00">2023/07/08</span>
         </a>
         
         
@@ -1120,6 +1183,15 @@
         </a>
         
         
+        <a  class="전체 TS_필살기 "
+           href="/typescript/special/15/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="TypeScript tsconfig - 프로젝트 설정 및 관리">TypeScript tsconfig - 프로젝트 설정 및 관리</span>
+            <span class="post-date" title="2023-05-29 00:00:00">2023/05/29</span>
+        </a>
+        
+        
         <a  class="전체 CLI "
            href="/cli/10/"
            data-tag=""
@@ -1153,6 +1225,15 @@
            data-author="" >
             <span class="post-title" title="Javascript 스프레드 연산자 (Spread Operator)">Javascript 스프레드 연산자 (Spread Operator)</span>
             <span class="post-date" title="2023-05-20 00:00:00">2023/05/20</span>
+        </a>
+        
+        
+        <a  class="전체 TS_필살기 "
+           href="/typescript/special/14/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="TypeScript 테스트">TypeScript 테스트</span>
+            <span class="post-date" title="2023-05-19 00:00:00">2023/05/19</span>
         </a>
         
         
@@ -1216,6 +1297,15 @@
            data-author="" >
             <span class="post-title" title="Vue Lazy Loading">Vue Lazy Loading</span>
             <span class="post-date" title="2023-04-03 00:00:00">2023/04/03</span>
+        </a>
+        
+        
+        <a  class="전체 TS_필살기 "
+           href="/typescript/special/13/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="TypeScript와 web 프레임워크">TypeScript와 web 프레임워크</span>
+            <span class="post-date" title="2023-04-02 00:00:00">2023/04/02</span>
         </a>
         
         
@@ -1511,7 +1601,7 @@
            href="/typescript/special/12/"
            data-tag=""
            data-author="" >
-            <span class="post-title" title="TypeScript 타입 매핑 (Type Mapping)">TypeScript 타입 매핑 (Type Mapping)</span>
+            <span class="post-title" title="TypeScript 타입 매핑(Type Mapping)">TypeScript 타입 매핑(Type Mapping)</span>
             <span class="post-date" title="2023-02-03 00:00:00">2023/02/03</span>
         </a>
         
@@ -1921,15 +2011,6 @@
         </a>
         
         
-        <a  class="전체 디자인패턴 "
-           href="/design-pattern/15/"
-           data-tag=""
-           data-author="" >
-            <span class="post-title" title="프록시 패턴 (Proxy Pattern)">프록시 패턴 (Proxy Pattern)</span>
-            <span class="post-date" title="2022-08-05 00:00:00">2022/08/05</span>
-        </a>
-        
-        
         <a  class="전체 etc "
            href="/emoji/discord/"
            data-tag=""
@@ -1940,11 +2021,11 @@
         
         
         <a  class="전체 디자인패턴 "
-           href="/design-pattern/14/"
+           href="/design-pattern/15/"
            data-tag=""
            data-author="" >
-            <span class="post-title" title="메멘토 패턴 (Memento Pattern)">메멘토 패턴 (Memento Pattern)</span>
-            <span class="post-date" title="2022-08-04 00:00:00">2022/08/04</span>
+            <span class="post-title" title="프록시 패턴 (Proxy Pattern)">프록시 패턴 (Proxy Pattern)</span>
+            <span class="post-date" title="2022-08-05 00:00:00">2022/08/05</span>
         </a>
         
         
@@ -1958,11 +2039,11 @@
         
         
         <a  class="전체 디자인패턴 "
-           href="/design-pattern/13/"
+           href="/design-pattern/14/"
            data-tag=""
            data-author="" >
-            <span class="post-title" title="상태 패턴 (State Pattern)">상태 패턴 (State Pattern)</span>
-            <span class="post-date" title="2022-08-03 00:00:00">2022/08/03</span>
+            <span class="post-title" title="메멘토 패턴 (Memento Pattern)">메멘토 패턴 (Memento Pattern)</span>
+            <span class="post-date" title="2022-08-04 00:00:00">2022/08/04</span>
         </a>
         
         
@@ -1976,11 +2057,11 @@
         
         
         <a  class="전체 디자인패턴 "
-           href="/design-pattern/12/"
+           href="/design-pattern/13/"
            data-tag=""
            data-author="" >
-            <span class="post-title" title="책임 연쇄 패턴 (Chain of Responsibility Pattern)">책임 연쇄 패턴 (Chain of Responsibility Pattern)</span>
-            <span class="post-date" title="2022-08-02 00:00:00">2022/08/02</span>
+            <span class="post-title" title="상태 패턴 (State Pattern)">상태 패턴 (State Pattern)</span>
+            <span class="post-date" title="2022-08-03 00:00:00">2022/08/03</span>
         </a>
         
         
@@ -1989,6 +2070,15 @@
            data-tag=""
            data-author="" >
             <span class="post-title" title="Markdown emoji 모음">Markdown emoji 모음</span>
+            <span class="post-date" title="2022-08-02 00:00:00">2022/08/02</span>
+        </a>
+        
+        
+        <a  class="전체 디자인패턴 "
+           href="/design-pattern/12/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="책임 연쇄 패턴 (Chain of Responsibility Pattern)">책임 연쇄 패턴 (Chain of Responsibility Pattern)</span>
             <span class="post-date" title="2022-08-02 00:00:00">2022/08/02</span>
         </a>
         
@@ -2002,20 +2092,20 @@
         </a>
         
         
-        <a  class="전체 디자인패턴 "
-           href="/design-pattern/11/"
-           data-tag=""
-           data-author="" >
-            <span class="post-title" title="미디에이터 패턴 (Mediator Pattern)">미디에이터 패턴 (Mediator Pattern)</span>
-            <span class="post-date" title="2022-08-01 00:00:00">2022/08/01</span>
-        </a>
-        
-        
         <a  class="전체 etc "
            href="/emoji/git/"
            data-tag=""
            data-author="" >
             <span class="post-title" title="Git emoji 모음">Git emoji 모음</span>
+            <span class="post-date" title="2022-08-01 00:00:00">2022/08/01</span>
+        </a>
+        
+        
+        <a  class="전체 디자인패턴 "
+           href="/design-pattern/11/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="미디에이터 패턴 (Mediator Pattern)">미디에이터 패턴 (Mediator Pattern)</span>
             <span class="post-date" title="2022-08-01 00:00:00">2022/08/01</span>
         </a>
         
