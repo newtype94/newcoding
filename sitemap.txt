@@ -98,8 +98,8 @@ https://www.newcoding.co.kr/web/essential/20/
 https://www.newcoding.co.kr/web/essential/3/
 https://www.newcoding.co.kr/web/essential/4/
 https://www.newcoding.co.kr/web/essential/17/
-https://www.newcoding.co.kr/database/11/
 https://www.newcoding.co.kr/database/12/
+https://www.newcoding.co.kr/database/11/
 https://www.newcoding.co.kr/database/4/
 https://www.newcoding.co.kr/web/essential/10/
 https://www.newcoding.co.kr/web/essential/9/
@@ -147,8 +147,8 @@ https://www.newcoding.co.kr/typescript/troubleshooting/2/
 https://www.newcoding.co.kr/typescript/troubleshooting/10/
 https://www.newcoding.co.kr/typescript/troubleshooting/11/
 https://www.newcoding.co.kr/typescript/troubleshooting/1/
-https://www.newcoding.co.kr/typescript/basic/8/
 https://www.newcoding.co.kr/typescript/basic/9/
+https://www.newcoding.co.kr/typescript/basic/8/
 https://www.newcoding.co.kr/typescript/basic/6/
 https://www.newcoding.co.kr/typescript/basic/7/
 https://www.newcoding.co.kr/typescript/basic/5/
@@ -167,13 +167,13 @@ https://www.newcoding.co.kr/javascript/detail/5/
 https://www.newcoding.co.kr/javascript/detail/6/
 https://www.newcoding.co.kr/javascript/detail/3/
 https://www.newcoding.co.kr/javascript/detail/4/
-https://www.newcoding.co.kr/javascript/detail/23/
 https://www.newcoding.co.kr/javascript/detail/22/
+https://www.newcoding.co.kr/javascript/detail/23/
 https://www.newcoding.co.kr/javascript/detail/21/
 https://www.newcoding.co.kr/javascript/detail/2/
 https://www.newcoding.co.kr/javascript/detail/20/
-https://www.newcoding.co.kr/javascript/detail/19/
 https://www.newcoding.co.kr/javascript/detail/18/
+https://www.newcoding.co.kr/javascript/detail/19/
 https://www.newcoding.co.kr/javascript/detail/16/
 https://www.newcoding.co.kr/javascript/detail/17/
 https://www.newcoding.co.kr/javascript/detail/15/
@@ -191,8 +191,8 @@ https://www.newcoding.co.kr/javascript/basic/4/
 https://www.newcoding.co.kr/javascript/basic/5/
 https://www.newcoding.co.kr/javascript/basic/2/
 https://www.newcoding.co.kr/javascript/basic/3/
-https://www.newcoding.co.kr/javascript/basic/10/
 https://www.newcoding.co.kr/javascript/basic/11/
+https://www.newcoding.co.kr/javascript/basic/10/
 https://www.newcoding.co.kr/javascript/basic/1/
 https://www.newcoding.co.kr/emoji/slack/
 https://www.newcoding.co.kr/emoji/jira/
@@ -202,8 +202,8 @@ https://www.newcoding.co.kr/emoji/discord/
 https://www.newcoding.co.kr/design-pattern/9/
 https://www.newcoding.co.kr/design-pattern/8/
 https://www.newcoding.co.kr/design-pattern/6/
-https://www.newcoding.co.kr/design-pattern/5/
 https://www.newcoding.co.kr/design-pattern/4/
+https://www.newcoding.co.kr/design-pattern/5/
 https://www.newcoding.co.kr/design-pattern/3/
 https://www.newcoding.co.kr/design-pattern/15/
 https://www.newcoding.co.kr/design-pattern/2/
@@ -222,8 +222,8 @@ https://www.newcoding.co.kr/cli/4/
 https://www.newcoding.co.kr/cli/3/
 https://www.newcoding.co.kr/cli/15/
 https://www.newcoding.co.kr/cli/13/
-https://www.newcoding.co.kr/cli/12/
 https://www.newcoding.co.kr/cli/11/
+https://www.newcoding.co.kr/cli/12/
 https://www.newcoding.co.kr/cli/1/
 https://www.newcoding.co.kr/cli/10/
 https://www.newcoding.co.kr/
