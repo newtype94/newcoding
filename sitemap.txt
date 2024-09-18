@@ -157,8 +157,8 @@ https://www.newcoding.co.kr/web/newb/7/
 https://www.newcoding.co.kr/web/newb/5/
 https://www.newcoding.co.kr/web/newb/3/
 https://www.newcoding.co.kr/web/newb/4/
-https://www.newcoding.co.kr/web/newb/2/
 https://www.newcoding.co.kr/web/newb/1/
+https://www.newcoding.co.kr/web/newb/2/
 https://www.newcoding.co.kr/web/ha/1/
 https://www.newcoding.co.kr/web/essential/19/
 https://www.newcoding.co.kr/typescript/troubleshooting/9/
