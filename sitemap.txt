@@ -235,11 +235,11 @@ https://www.newcoding.co.kr/javascript/detail/12/
 https://www.newcoding.co.kr/javascript/detail/1/
 https://www.newcoding.co.kr/javascript/detail/10/
 https://www.newcoding.co.kr/javascript/basic/9/
-https://www.newcoding.co.kr/javascript/basic/7/
 https://www.newcoding.co.kr/javascript/basic/8/
+https://www.newcoding.co.kr/javascript/basic/7/
 https://www.newcoding.co.kr/javascript/basic/6/
-https://www.newcoding.co.kr/javascript/basic/4/
 https://www.newcoding.co.kr/javascript/basic/5/
+https://www.newcoding.co.kr/javascript/basic/4/
 https://www.newcoding.co.kr/javascript/basic/2/
 https://www.newcoding.co.kr/javascript/basic/3/
 https://www.newcoding.co.kr/javascript/basic/10/
@@ -251,8 +251,8 @@ https://www.newcoding.co.kr/emoji/markdown/
 https://www.newcoding.co.kr/emoji/git/
 https://www.newcoding.co.kr/emoji/discord/
 https://www.newcoding.co.kr/design-pattern/6/
-https://www.newcoding.co.kr/design-pattern/5/
 https://www.newcoding.co.kr/design-pattern/4/
+https://www.newcoding.co.kr/design-pattern/5/
 https://www.newcoding.co.kr/design-pattern/3/
 https://www.newcoding.co.kr/design-pattern/2/
 https://www.newcoding.co.kr/design-pattern/1/
